@@ -5,7 +5,7 @@ import Dashboard from "./Pages/Dashboard";
 import Registerdevice from "./Pages/Registerdevice";
 import Mydevice from "./Pages/Mydevice";
 
-export default function App() {
+const App = ()  =>{
   return (
     <Router>
       <Routes>
@@ -17,3 +17,6 @@ export default function App() {
     </Router>
   );
 }
+
+
+export default App
