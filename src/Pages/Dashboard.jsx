@@ -1,5 +1,7 @@
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
+import { FaUser } from "react-icons/fa";
+import { BarChart } from '@mui/x-charts/BarChart';
 
 export default function Dashboard() {
   const exportToCSV = () => {
@@ -36,19 +38,54 @@ export default function Dashboard() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-64">
+      <div className="flex-1 ml-52">
         <Topbar />
         <main className="mt-20 p-6">
-          <h2 className="text-2xl font-bold mb-4">Welcome, Student 👋</h2>
-          <p className="text-gray-600">
-            Register your gadgets for the current semester to stay compliant.
-          </p>
-          <button
-            onClick={exportToCSV}
-            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-          >
-            Export Devices to CSV
-          </button>
+          <div className="flex justify-between items-center mb-6 ">
+
+            <div className="shadow-lg h-32 w-96 rounded-lg bg-[#FFFFFF]">
+              <p className="absolute h-13 w-13 rounded-lg bg-[#929DAE] flex items-center justify-center top-22 left-61"> <FaUser /></p>
+            </div>
+
+            <div className="shadow-lg h-32 w-96 rounded-lg bg-[#FFFFFF]">
+              <p className="absolute h-13 w-13 rounded-lg bg-green-400 flex items-center justify-center top-22 left-168"> <FaUser /></p>
+            </div>
+
+            <div className="shadow-lg h-32 w-96 rounded-lg bg-[#FFFFFF]">
+              <p className="absolute h-13 w-13 rounded-lg bg-blue-400 flex items-center justify-center top-22 left-274"> <FaUser /></p>
+            </div>
+
+            <div className="shadow-lg h-32 w-96 rounded-lg bg-[#FFFFFF]">
+              <p className="absolute h-13 w-13 rounded-lg bg-red-400 flex items-center justify-center top-22 left-382"> <FaUser /></p>
+            </div>
+
+          </div>
+
+          {/* 2  */}
+          <div>
+
+    <BarChart
+      xAxis={[
+        {
+          id: 'days',
+          data: ['m', 't', 'w', 'th', 'f', 's', 'su'],
+          label: 'Days',
+        },
+      ]}
+      series={[
+        {
+          data: [2, 5, 3, 2, 4, 6, 7],
+          color: '#4caf50',
+          barSize: 20,
+          label: 'Devices',
+        },
+      ]}
+      height={300}
+      width={300}
+    />
+ 
+
+          </div>
         </main>
       </div>
     </div>

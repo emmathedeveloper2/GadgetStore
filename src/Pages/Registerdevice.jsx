@@ -67,7 +67,7 @@ export default function RegisterDevice() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-64">
+      <div className="flex-1 ml-52">
         <Topbar />
         <main className="mt-20 p-6">
           <h2 className="text-2xl font-bold mb-6 text-center">

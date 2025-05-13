@@ -33,7 +33,7 @@ export default function Mydevice() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-64">
+      <div className="flex-1 ml-52">
         <Topbar />
         <main className="mt-20 p-6">
           <div className="flex items-center justify-center mb-6 gap-4">
