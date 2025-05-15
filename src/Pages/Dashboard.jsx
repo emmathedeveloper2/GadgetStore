@@ -39,11 +39,11 @@ export default function Dashboard() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 md:ml-52 ml-16 transition-all duration-300">
+      <div className="flex-1 md:ml-52  transition-all duration-300">
         <Topbar />
-        <main className="mt-20 p-4">
+        <main className="mt-20 p-4 md:p-2">
           {/* Info Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 text-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 text-white">
             {[
               { color: "bg-black", label: "Students", value: 760, change: "+55%" },
               { color: "bg-green-600", label: "Gadgets", value: 760, change: "+55%" },

@@ -189,7 +189,7 @@ export default function Chart() {
 
       <div className="shadow-lg w-full sm:w-[90%] md:w-[48%] lg:w-[32%] rounded-lg bg-[#FFFFFF]">
         <div className="flex flex-col items-center relative">
-          <div className="w-[520px] -mt-5 h-48 p-5 bg-[#2C85EC] rounded-md text-white shadow-lg">
+          <div className="w-full h-48 p-5 bg-[#2C85EC] rounded-md text-white shadow-lg">
             <Bar data={data} options={options} />
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function Chart() {
       {/* CHART CARD 2 */}
       <div className="shadow-lg w-full sm:w-[90%] md:w-[48%] lg:w-[32%] rounded-lg bg-[#FFFFFF]">
         <div className="flex flex-col items-center relative">
-          <div className="w-[520px] -mt-5 h-48 p-5 bg-[#59B15D] rounded-md text-white shadow-lg">
+          <div className="w-full h-48 p-5 bg-[#59B15D] rounded-md text-white shadow-lg">
             <Line data={lineData} options={lineOptions2} />
           </div>
         </div>
@@ -223,7 +223,7 @@ export default function Chart() {
       {/* CHART CARD 3 */}
       <div className="shadow-lg w-full sm:w-[90%] md:w-[48%] lg:w-[32%] rounded-lg bg-[#FFFFFF] ">
         <div className="flex flex-col items-center relative">
-          <div className="w-[520px] -mt-5 h-48 p-5 bg-[#2D2D31] rounded-md text-white shadow-lg">
+          <div className="w-full h-48 p-5 bg-[#2D2D31] rounded-md text-white shadow-lg">
             <Line data={lineData} options={lineOptions} />
           </div>
         </div>

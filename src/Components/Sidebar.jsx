@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <aside className="fixed text top-2 left-0 h-[977px] p-4 bg-[#2D2D31] text-white rounded-md ml-2 w-16 md:w-48 transition-all duration-300">
+    <aside className="hidden md:block fixed top-2 left-0 h-[977px] p-4 bg-[#2D2D31] text-white rounded-md ml-2 w-16 md:w-48 transition-all duration-300">
       {/* Header */}
       <h2 className="text-xl font-bold mb-10 flex items-center justify-center md:justify-start gap-2">
         <MdOutlineDashboardCustomize className="text-2xl" />
