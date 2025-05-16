@@ -33,16 +33,16 @@ export default function Mydevice() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-52">
+      <div className="flex-1 md:ml-52">
         <Topbar />
         <main className="mt-20 p-6">
-          <div className="flex items-center justify-center mb-6 gap-4">
+          <div className="flex items-center justify-center mb-6 gap-4 md:mt-0 mt-10">
             <input
               type="text"
               placeholder="Matric number"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="border border-gray-300 rounded px-4 py-2"
+              className="border border-gray-300 rounded w-96 px-4 py-2 focus:outline-0"
             />
             <button
               className="text-sm bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"

@@ -44,7 +44,7 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+            className="w-full bg-[#2D2D31] text-white py-2 px-4 rounded hover:bg-[#474747] transition cursor-pointer"
             onClick={handleSubmit}
           >
             Login
