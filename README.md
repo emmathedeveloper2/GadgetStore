@@ -23,7 +23,6 @@ This project was built as a school-level web application for managing gadgets, s
 
 ## 📸 Screenshots
 
-> Add your screenshots in the `public/screenshots/` folder and update the image links below.
 
 | Dashboard | Register Page |
 |-----------|----------------|
@@ -35,9 +34,9 @@ This project was built as a school-level web application for managing gadgets, s
 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [React Router DOM](https://reactrouter.com/)
-- [localStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS for building beautiful UIs fast.
+- [React Router DOM](https://reactrouter.com/) - A complete routing library for React.
+- [localStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - A storage stored on your device
 - CSV generation via plain JavaScript
 
 ---
