@@ -1,0 +1,2687 @@
+[
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (4th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air (1st Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Mini (1st Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Mini 2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air 2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Mini 3",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 12.9 (1st Gen),Tab\r\nApple,iPad Pro 9.7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (5th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 10.5,Tab\r\nApple,iPad Pro 12.9 (2nd Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (6th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 11 (1st Gen),Tab\r\nApple,iPad Pro 12.9 (3rd Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air (3rd Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Mini (5th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (7th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 11 (2nd Gen),Tab\r\nApple,iPad Pro 12.9 (4th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air (4th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (8th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (9th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Mini (6th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air (5th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad (10th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 11 (3rd Gen),Tab\r\nApple,iPad Pro 12.9 (5th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 11 (4th Gen),Tab\r\nApple,iPad Pro 12.9 (6th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Air (6th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 11 (5th Gen),Tab\r\nApple,iPad Pro 13 (1st Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 2 10.1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 2 7.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Note 10.1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 3 10.1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 3 8.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 3 7.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Note 8.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab Pro 12.2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab Pro 10.1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab Pro 8.4",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 4 10.1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 4 8.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab 4 7.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S 10.5",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S 8.4",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S2 9.7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S2 8.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A 9.7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A 8.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S3",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S4",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A 10.5",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S5e",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A 8.0 (2019)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S6",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A 10.1 (2019)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S6 Lite",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S7+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A7 Lite",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S7 FE",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A8",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S8",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S8+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S8 Ultra",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A7 (2022)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S9",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S9+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S9 Ultra",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A9",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab A9+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S9 FE",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S9 FE+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S10+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S10 Ultra",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S10 FE",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Tab S10 FE+",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Infinix",
+        "DeviceName": "XPAD X1101",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Infinix",
+        "DeviceName": "XPAD X1101b",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Pad One",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Pad 1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Vista Tab 10",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Vista Tab 10 Mini",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Vista Tab 30",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "DroiPad 7D",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Megapad 10",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Megapad 11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Phantom Pad",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Phantom Pad Mini P9",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Redmi",
+        "DeviceName": "Redmi Pad",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Redmi",
+        "DeviceName": "Redmi Pad SE",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Redmi",
+        "DeviceName": "Redmi Pad SE 8.7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Redmi",
+        "DeviceName": "Redmi Pad Pro",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Redmi",
+        "DeviceName": "Redmi Pad Pro 5G",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad Tablet",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Tablet Gen 1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Tablet Gen 2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Tablet Gen 3",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Fold Gen 1",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Fold Gen 2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M10",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M10 Plus (2nd Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M10 Plus (3rd Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M10 Plus (4th Gen)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab P11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab P11 Plus",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab P11 Pro",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab P12",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab Extreme",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y700",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y700 Ultimate Edition",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y700 (2025)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Tab",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Idea Tab Pro",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab K9",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab K11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab K11 Enhanced Edition",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab Plus",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Xiaoxin Pad Pro 12.7",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MediaPad 7 Lite",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MediaPad T1 7.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MediaPad T3 7.0",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MediaPad M5",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MediaPad M6",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 10.8",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 12.6",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 11 (2024)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 12.2 (2024)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 13.2",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Pro 13.2 (2025)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Air",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad 11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad 11 (2023)",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad 11.5",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad 11.5 S",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad 12 X",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad SE",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad SE 11",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad C5e",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "MatePad Paper",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "Mid 2010)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "Mid 2010)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (17-inch",
+        "DeviceType": "Mid 2010)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Late 2010)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Late 2010)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "Early 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "Early 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (17-inch",
+        "DeviceType": "Early 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Mid 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Mid 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "Late 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "Late 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (17-inch",
+        "DeviceType": "Late 2011)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Mid 2012)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Mid 2012)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "Mid 2012)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "Mid 2012)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "15-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Mid 2013)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Mid 2013)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "15-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Early 2014)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Early 2014)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "15-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook (Retina",
+        "DeviceType": "12-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (11-inch",
+        "DeviceType": "Early 2015)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (13-inch",
+        "DeviceType": "Early 2015)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (Retina",
+        "DeviceType": "15-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook (Retina",
+        "DeviceType": "12-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2016"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2016"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "2016)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook (Retina",
+        "DeviceType": "12-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2017"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2017"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "2017)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2018"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "2018)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2019"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (15-inch",
+        "DeviceType": "2019)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (16-inch",
+        "DeviceType": "2019)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (Retina",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2020"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (13-inch",
+        "DeviceType": "2020"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (16-inch",
+        "DeviceType": "2020)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (M1",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M1",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (14-inch",
+        "DeviceType": "2021)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (16-inch",
+        "DeviceType": "2021)"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (M2",
+        "DeviceType": "13.6-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M2",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M2 Pro",
+        "DeviceType": "14-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M2 Pro",
+        "DeviceType": "16-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (M3",
+        "DeviceType": "13-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Air (M3",
+        "DeviceType": "15-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M3 Pro",
+        "DeviceType": "14-inch"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "MacBook Pro (M3 Pro",
+        "DeviceType": "16-inch"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8440p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8540p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2540p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2740p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8740w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8460p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8560p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8460w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8560w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8760w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2560p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2760p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2170p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 2570p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8470p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8570p",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8470w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8570w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 8770w",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook Folio 9470m",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 820 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 850 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook Folio 1040 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 725 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 745 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 755 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 820 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 850 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook Folio 1020",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 725 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 745 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 755 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 820 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook Folio G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 1040 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 850 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 830 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook x360 830 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 850 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 835 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 845 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 855 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook x360 1030 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook x360 1040 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 830 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook x360 830 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 850 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Spectre x360 13",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Spectre x360 15",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Spectre Folio",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Spectre x360 14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Spectre x360 16",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 4310s",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 4320s",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 4325s",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 4330s",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 4340s",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 430 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G0",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 440 G9",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G0",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 450 G9",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G0",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "ProBook 470 G8",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Device Brand",
+        "DeviceName": "Device Name",
+        "DeviceType": "Device Type"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E4310",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E5410",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E5510",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6410",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6410 ATG",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6510",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M4500",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (L501X)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17 (L702X)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M11x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M15x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M17x R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M11x R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M11x R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M14x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M17x R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M18x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude XT3",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M6600",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (L321x)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M14x R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M15x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M17x R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M18x R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E5530",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6230",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6330",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6430",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6430 ATG",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude E6530",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M4600",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M6700",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 14 (L421x)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (L511x)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "M14x",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 13 7000",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7000",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M3800",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision M4800",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 3500",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 12 (9Q23)",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9343)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9530)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 13",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 15",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9343)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9550)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 12 (9250)",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 13 7350",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 11 5000 2-in-1 (3157)",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7559",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 3550",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3510",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5510",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7510",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7710",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 15 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 13 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9360)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9560)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7280",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7480",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 12 7275",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 13 7370",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 14 7460",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7569",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 3460",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3520",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5520",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 15 R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17 R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 13 R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9370)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9570)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 5290 2-in-1",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7390",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7490",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 13 7373",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7577",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 3468",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3530",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5530",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 15 R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17 R5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware M15",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware M17",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9380)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 2-in-1 (9385)",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 2-in-1 (9575)",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7400 2-in-1",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 5570",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 3576",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 3478",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3540",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5540",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 15 R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware 17 R5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9300)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (7590)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17 (9700)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9410",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9510",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 14 5491",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7591",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 5590",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5540",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7540",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7740",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware Area-51m",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m15 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m17 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9310)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9500)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17 (9710)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7420",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9520",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 14 5410",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 5510",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 5502",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 14 5402",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5550",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7550",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7750",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m15 R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m17 R3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware Area-51m R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9310)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 Plus (9320)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9510)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9420",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 16 7610",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 5510",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 14 5410",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3561",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5561",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7560",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x15",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x17",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m15 R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m17 R4",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9330)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9520)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17 (9720)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7430",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9430",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 13 5320",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 14 7420",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7520",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 16 7620",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 13 5320",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 14 7420",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 3520",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 3562",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5562",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7780",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x15 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x17 R2",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m15 R6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m17 R6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13 (9340)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15 (9530)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17 (9730)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 7440",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Latitude 9540",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 14 7430",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 15 7530",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 16 7630",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Inspiron 17 7730",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 14 7530",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 15 7530",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Vostro 16 7630",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 5571",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7770",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "Precision 7780",
+        "DeviceType": "Mobile Workstation"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware x16",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m15 R7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m17 R7",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m16",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Alienware",
+        "DeviceName": "Alienware m18 R1",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 13",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 15",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Dell",
+        "DeviceName": "XPS 17",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ZenBook UX305",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ZenBook UX306",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ZenBook Pro UX501",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ZenBook Flip UX360",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ZenBook Flip S UX370",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "VivoBook Flip TP203",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "VivoBook S14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ROG Zephyrus G14",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ROG Strix G17",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "TUF Gaming FX504",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "Chromebook Flip C302",
+        "DeviceType": "Chromebook"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Carbon Gen 3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad T480",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkPad X1 Yoga",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "IdeaPad S540",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Yoga 920",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y520",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y720",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion Y920",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion 5",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Legion 7i",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "ThinkBook 14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Chromebook Duet",
+        "DeviceType": "Chromebook"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Aspire E15 (E5-575)",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Aspire 5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Swift 3",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Swift 5",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Nitro 5",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Predator Helios 300",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Predator Triton 500",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Spin 5",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "TravelMate P6",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Acer",
+        "DeviceName": "Chromebook Spin 13",
+        "DeviceType": "Chromebook"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Book",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Book 2",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Book S",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Book Pro 360",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Book Pro",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Notebook 9 Pro",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Notebook 9",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Notebook Odyssey",
+        "DeviceType": "Gaming Laptop"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Notebook 7 Spin",
+        "DeviceType": "2-in-1"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Chromebook Plus",
+        "DeviceType": "Chromebook"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "",
+        "DeviceType": "Chromebook"
+    },
+    {
+        "DeviceBrand": "",
+        "DeviceName": "",
+        "DeviceType": ""
+    },
+    {
+        "DeviceBrand": "",
+        "DeviceName": "",
+        "DeviceType": ""
+    },
+    {
+        "DeviceBrand": "",
+        "DeviceName": "",
+        "DeviceType": ""
+    }
+]

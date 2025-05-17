@@ -45,6 +45,13 @@ export default function Sidebar() {
           <PiSignOutBold className="text-lg" />
           <span className="hidden md:inline">Sign out</span>
         </Link>
+        <Link
+          to="/"
+          className="bg-blue-500 hover:bg-[#ff4f4f] mt-[640px] text-1xl p-2 rounded flex items-center gap-2"
+        >
+          <PiSignOutBold className="text-lg" />
+          <span className="hidden md:inline">Sign out</span>
+        </Link>
       </nav>
     </aside>
   );

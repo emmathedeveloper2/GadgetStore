@@ -27,10 +27,9 @@ export default function RegisterDevice() {
 
     const existingDevices = JSON.parse(localStorage.getItem("devices")) || [];
 
-  
     const newDevice = {
       ...device,
-      id: Date.now(), 
+      id: Date.now(),
       image: device.image ? URL.createObjectURL(device.image) : null,
     };
 
@@ -67,9 +66,9 @@ export default function RegisterDevice() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-52">
+      <div className="flex-1 md:ml-52 md:mt-0 mt-10">
         <Topbar />
-        <main className="mt-20 p-6">
+        <main className="mt-20 flex flex-col justify-center items-center  p-6">
           <h2 className="text-2xl font-bold mb-6 text-center">
             Register New Device
           </h2>
@@ -84,7 +83,7 @@ export default function RegisterDevice() {
                 required
                 value={device.type}
                 onChange={handleChange}
-                className="w-full mt-1 p-2 border border-gray-300 rounded"
+                className="w-[500px] mt-1 p-2 border border-gray-300 rounded"
               >
                 <option value="">-- Select Device --</option>
                 <option>Laptop</option>
@@ -147,6 +146,18 @@ export default function RegisterDevice() {
                 className="w-full mt-1 p-2 border border-gray-300 rounded"
               />
             </div>
+            
+            <div>
+              <label className="block text-sm font-medium">Date</label>
+              <h2
+                name="date"
+                type="text"
+                value={device.date}
+                onChange={handleChange}
+                placeholder=""
+                className="w-full mt-1 p-3 border border-gray-300 rounded"
+              >{device.date}</h2>
+            </div>
 
             <div>
               <label className="block text-sm font-medium">
@@ -187,6 +198,9 @@ export default function RegisterDevice() {
               </h2>
               <h2>
                 Matric : <strong>{device.matric}</strong>
+              </h2>
+              <h2>
+                Matric : <strong>{device.date}</strong>
               </h2>
             </div>
           )}

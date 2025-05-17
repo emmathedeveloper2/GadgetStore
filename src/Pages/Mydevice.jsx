@@ -5,26 +5,44 @@ import Topbar from "../Components/Topbar";
 
 export default function Mydevice() {
   const [devices, setDevices] = useState(() => {
-    const stored = localStorage.getItem("devices")
+    const stored = localStorage.getItem("devices");
     return stored ? JSON.parse(stored) : [];
-  })
+  });
+  const [editingDevice, setEditingDevice] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const storedDevices = JSON.parse(localStorage.getItem("devices")) || [];
-    setDevices(storedDevices)
-  }, [])
-  
-  const [searchTerm, setSearchTerm] = useState("");
-  
+    setDevices(storedDevices);
+  }, []);
 
   const handleDelete = (id) => {
-    const confirm = window.confirm("Are you sure you want to delete this device?");
+    const confirm = window.confirm(
+      "Are you sure you want to delete this device?"
+    );
     if (confirm) {
-     const updated = devices.filter((d) => d.id !== id);
-     setDevices(updated);
-     localStorage.setItem("device", JSON.stringify(updated))
+      const updated = devices.filter((d) => d.id !== id);
+      setDevices(updated);
+      localStorage.setItem("device", JSON.stringify(updated));
     }
   };
+
+  function handleEdit(device) {
+    setEditingDevice(device);
+  }
+
+  function handleUpdate(e) {
+    e.preventDefault();
+    const devices = JSON.parse(localStorage.getItem("devices")) || [];
+
+    const updatedDevices = devices.map((item) =>
+      item.id === editingDevice.id ? editingDevice : item
+    );
+
+    localStorage.setItem("devices", JSON.stringify(updatedDevices));
+    setEditingDevice(null);
+    setDevices(updatedDevices);
+  }
 
   const filteredDevices = devices.filter((device) =>
     device.matric.toLowerCase().includes(searchTerm.toLowerCase())
@@ -54,7 +72,9 @@ export default function Mydevice() {
           <h2 className="text-2xl font-bold mb-6">My Registered Devices</h2>
 
           {filteredDevices.length === 0 ? (
-            <p className="text-gray-500">No devices match the search criteria.</p>
+            <p className="text-gray-500">
+              No devices match the search criteria.
+            </p>
           ) : (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               {filteredDevices.map((device) => (
@@ -95,7 +115,7 @@ export default function Mydevice() {
                     </button>
                     <button
                       className="text-sm bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
-                      onClick={() => alert("Coming soon!")}
+                      onClick={() => handleEdit(device)}
                     >
                       Edit
                     </button>
@@ -103,6 +123,47 @@ export default function Mydevice() {
                 </div>
               ))}
             </div>
+          )}
+          {editingDevice && (
+            <form onSubmit={handleUpdate} className="flex flex-col w-96">  
+              <input
+                value={editingDevice.type}
+                onChange={(e) =>
+                  setEditingDevice({ ...editingDevice, type: e.target.value })
+                }
+                placeholder="Type"
+              />
+              <input
+                value={editingDevice.brand}
+                onChange={(e) =>
+                  setEditingDevice({ ...editingDevice, brand: e.target.value })
+                }
+                placeholder="Brand"
+              />
+              <input
+                value={editingDevice.serial}
+                onChange={(e) =>
+                  setEditingDevice({ ...editingDevice, serial: e.target.value })
+                }
+                placeholder="Serial"
+              />
+              <input
+                value={editingDevice.mac}
+                onChange={(e) =>
+                  setEditingDevice({ ...editingDevice, mac: e.target.value })
+                }
+                placeholder="Mac"
+              />
+              <input
+                value={editingDevice.matric}
+                onChange={(e) =>
+                  setEditingDevice({ ...editingDevice, matric: e.target.value })
+                }
+                placeholder="Matric"
+              />
+              <button type="submit">Save</button>
+              <button onClick={() => setEditingDevice(null)}>Cancel</button>
+            </form>
           )}
         </main>
       </div>
