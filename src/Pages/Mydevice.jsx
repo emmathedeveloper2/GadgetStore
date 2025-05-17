@@ -69,7 +69,7 @@ export default function Mydevice() {
               Search
             </button>
           </div>
-          <h2 className="text-2xl font-bold mb-6">My Registered Devices</h2>
+          <h2 className="text-2xl font-bold mb-6">Registered Devices</h2>
 
           {filteredDevices.length === 0 ? (
             <p className="text-gray-500">
@@ -84,7 +84,7 @@ export default function Mydevice() {
                 >
                   <img
                     src={device.image}
-                    alt={device.brand}
+                    // alt={device.brand}
                     className="h-32 object-contain mb-3"
                   />
                   <div className="mb-2">

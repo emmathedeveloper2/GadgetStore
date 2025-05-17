@@ -48,7 +48,7 @@ export default function Sidebar() {
           }
         >
           <FaThList className="text-lg" />
-          <span className="hidden md:inline">My Devices</span>
+          <span className="hidden md:inline">Devices</span>
         </NavLink>
         <NavLink
         to="/Profile"

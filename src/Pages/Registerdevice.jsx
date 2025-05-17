@@ -57,10 +57,10 @@ export default function RegisterDevice() {
 
     const updatedDevices = [...existingDevices, newDevice];
 
-    // Save updated devices back to local storage
+    
     localStorage.setItem("devices", JSON.stringify(updatedDevices));
 
-    // Clear the form
+
     setDevice({
       type: "",
       brand: "",
@@ -111,9 +111,10 @@ export default function RegisterDevice() {
                 <option value="">-- Select Device --</option>
                 <option>Laptop</option>
                 <option>Phone</option>
-                <option>Mifi</option>
-                <option>Airpods</option>
                 <option>Tab</option>
+                <option>Airpod</option>
+                <option>Mifi</option>
+                <option>Smartwatch</option>
                 <option>Others</option>
               </select>
             </div>
@@ -161,7 +162,7 @@ export default function RegisterDevice() {
                 required
                 value={device.serial}
                 onChange={handleChange}
-                placeholder="e.g. ABC123456XYZ"
+                placeholder="e.g. 11-22-33333"
                 className="w-full mt-1 p-2 border border-gray-300 rounded"
               />
             </div>

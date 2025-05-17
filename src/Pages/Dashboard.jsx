@@ -34,12 +34,12 @@ export default function Dashboard() {
             
             newValue = Math.floor(Math.random() * 900 + 100);
           }
-          // Random change percent
+
           const newChange = `+${Math.floor(Math.random() * 90 + 10)}%`;
           return { ...card, value: newValue, change: newChange };
         })
       );
-    }, 180000);
+    }, 1800);
 
     return () => clearInterval(interval);
   }, []);

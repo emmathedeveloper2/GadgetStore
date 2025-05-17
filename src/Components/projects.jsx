@@ -44,17 +44,18 @@ export default function Project() {
 
         {/* Table Header */}
         <p className="text font-bold ml-1 mt-2">Recent Devices</p>
-        <div className="mt-3 overflow-x-auto">
-          <table className="min-w-full text-left border-collapse">
+        <div className="mt-3 overflow-x-auto ml-4">
+          <table className="min-w-full justify-between text-left border-collapse">
             <thead>
               <tr className="text-[#58595a] font-mono font-bold text-sm">
-                <th className="p-2">Device</th>
-                <th className="p-2">Type</th>
-                <th className="p-2">Budget</th>
+                <th className="p-2">Matrric</th>
+                <th className="p-2">Name</th>
+                <th className="p-2">Amount</th>
                 <th className="p-2">Completion</th>
                 <th className="p-2">Time/Date</th>
               </tr>
             </thead>
+            
             <tbody className="text-[#344767] font-mono text-sm">
               {[...Array(5)].map((_, index) => (
                 <tr key={index} className="border-t border-[#eaecee]">
@@ -64,12 +65,12 @@ export default function Project() {
                       alt="device"
                       className="h-5 w-5 rounded-full"
                     />
-                    Device 1
+                    DU0459
                   </td>
                   <td className="p-2">Laptop</td>
-                  <td className="p-2">₦150,000</td>
+                  <td className="p-2">2</td>
                   <td className="p-2 text-green-600 font-medium">Completed</td>
-                  <td className="p-2 text-[#929DAE]">12:00 PM</td>
+                  <td className="p-2 text-[#929DAE]">8:00 PM</td>
                 </tr>
               ))}
             </tbody>
