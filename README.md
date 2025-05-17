@@ -64,33 +64,6 @@ GadgetStore/
 ├── vite.config.js
 └── README.md
 
-yaml
-Copy
-Edit
-
----
-
-## 🧪 How to Run Locally
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/Hardelzs/GadgetStore.git
-cd GadgetStore
-Install dependencies
-
-bash
-Copy
-Edit
-npm install
-Start development server
-
-bash
-Copy
-Edit
-npm run dev
-Open in browser
-Navigate to http://localhost:5173 to use the app.
-
 🔍 How It Works
 Register Gadget
 Users can fill in a form with gadget information. On submission, the data is stored in localStorage.
@@ -103,34 +76,3 @@ Updates a gadget’s data by pre-filling the form and saving new input.
 
 Export to CSV
 Converts gadget list to a .csv file and triggers a download for backup or sharing.
-
-🚀 Deployment
-Deployed with Vercel
-🔗 Live Site
-
-🧑‍💻 Author
-Hardelz
-🌍 Portfolio
-📧 Email
-
-📌 Notes
-No backend or authentication required
-
-Works 100% offline after initial load
-
-Built for learning and demonstration purposes
-
-📜 License
-This project is open for educational use. You are free to modify or extend it.
-
-vbnet
-Copy
-Edit
-
-Let me know when you’ve uploaded your screenshots so I can help you link them properly or include a GIF screen recording of the app in action if you want that cinematic presentation 😎
-
-
-
-
-
-
