@@ -1,7 +1,6 @@
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import deviceData from "../Data/deviceData.json";
 
 export default function RegisterDevice() {
@@ -13,21 +12,21 @@ export default function RegisterDevice() {
     mac: "",
     matric: "",
     image: "",
+    semester: "",
     date: new Date().toLocaleDateString(),
   });
-  const [isSubmmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [filteredBrands, setFilteredBrands] = useState([]);
   const [filteredNames, setFilteredNames] = useState([]);
+  const [imagePreview, setImagePreview] = useState("");
 
   useEffect(() => {
     if (device.type) {
       const filtered = deviceData.filter(
         (item) => item.DeviceType.toLowerCase() === device.type.toLowerCase()
       );
-
       const brands = [...new Set(filtered.map((item) => item.DeviceBrand))];
       const names = [...new Set(filtered.map((item) => item.DeviceName))];
-
       setFilteredBrands(brands);
       setFilteredNames(names);
     } else {
@@ -38,51 +37,80 @@ export default function RegisterDevice() {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    setDevice((prev) => ({
-      ...prev,
-      [name]: files ? files[0] : value,
-    }));
+    if (name === "image" && files && files[0]) {
+      setDevice((prev) => ({
+        ...prev,
+        image: files[0],
+      }));
+      setImagePreview(URL.createObjectURL(files[0]));
+    } else {
+      setDevice((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
   };
 
-  const handleSubmit = (e) => {
+  const toBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+  };
+
+  const getDefaultImageForType = (type) => {
+    switch (type.toLowerCase()) {
+      case "laptop":
+        return "/laptop.webp";
+      case "phone":
+        return "phone.webp";
+      case "tab":
+        return "tab.webp";
+      case "airpod":
+        return "/airpods.webp";
+      case "smartwatch":
+        return "/SmartWatch.png";
+      case "mifi":
+        return "/Mifi.png";
+      case "others":
+      default:
+        return "/other.webp";
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     const existingDevices = JSON.parse(localStorage.getItem("devices")) || [];
-
+    let base64Image = null;
+    if (device.image && device.image instanceof File) {
+      base64Image = await toBase64(device.image);
+    }
+    if (!base64Image && device.type) {
+      base64Image = getDefaultImageForType(device.type);
+    }
     const newDevice = {
       ...device,
       id: Date.now(),
-      image: device.image ? URL.createObjectURL(device.image) : null,
+      image: base64Image,
     };
-
     const updatedDevices = [...existingDevices, newDevice];
-
-    
     localStorage.setItem("devices", JSON.stringify(updatedDevices));
-
-
     setDevice({
       type: "",
       brand: "",
+      name: "",
       serial: "",
       mac: "",
       matric: "",
-      image: null,
+      image: "",
+      semester: "",
+      date: new Date().toLocaleDateString(),
     });
-
-    const data = {
-      type: device.type,
-      brand: device.brand,
-      serial: device.serial,
-      mac: device.mac,
-      matric: device.matric,
-      image: device.image,
-    };
-    console.log(data);
-
+    setImagePreview("");
     alert("Device registered successfully!");
-
-    setIsSubmitted(data);
+    setIsSubmitted(true);
   };
 
   return (
@@ -98,7 +126,24 @@ export default function RegisterDevice() {
             onSubmit={handleSubmit}
             className="bg-white p-6 rounded shadow max-w-xl space-y-4"
           >
-            <div required>
+            {/* Semester  */}
+            <div>
+              <label className="block text-sm font-medium">Semester</label>
+              <select
+                name="semester"
+                required
+                value={device.semester}
+                onChange={handleChange}
+                className="w-[500px] mt-1 p-2 border border-gray-300 rounded"
+              >
+                <option value="">-- Select Semester --</option>
+                <option>Alpha</option>
+                <option>Omega</option>
+              </select>
+            </div>
+
+            {/* Device Type */}
+            <div>
               <label className="block text-sm font-medium">Device Type</label>
               <select
                 name="type"
@@ -106,7 +151,6 @@ export default function RegisterDevice() {
                 value={device.type}
                 onChange={handleChange}
                 className="w-[500px] mt-1 p-2 border border-gray-300 rounded"
-    
               >
                 <option value="">-- Select Device --</option>
                 <option>Laptop</option>
@@ -118,7 +162,9 @@ export default function RegisterDevice() {
                 <option>Others</option>
               </select>
             </div>
-            <div required>
+
+            {/* Device Brand */}
+            <div>
               <label className="block text-sm font-medium">Brand</label>
               <input
                 name="brand"
@@ -136,7 +182,8 @@ export default function RegisterDevice() {
               </datalist>
             </div>
 
-            <div required>
+            {/* Device Name */}
+            <div>
               <label className="block text-sm font-medium">Device Name</label>
               <input
                 name="name"
@@ -154,6 +201,7 @@ export default function RegisterDevice() {
               </datalist>
             </div>
 
+            {/* Device Serial Number */}
             <div>
               <label className="block text-sm font-medium">Serial Number</label>
               <input
@@ -167,6 +215,7 @@ export default function RegisterDevice() {
               />
             </div>
 
+            {/* Device MAC Address */}
             <div>
               <label className="block text-sm font-medium">
                 MAC Address (optional)
@@ -181,7 +230,8 @@ export default function RegisterDevice() {
               />
             </div>
 
-            <div required>
+            {/* Matric Number */}
+            <div>
               <label className="block text-sm font-medium">Matric Number</label>
               <input
                 name="matric"
@@ -189,24 +239,25 @@ export default function RegisterDevice() {
                 value={device.matric}
                 onChange={handleChange}
                 placeholder="e.g. DU0549"
+                required
                 className="w-full mt-1 p-2 border border-gray-300 rounded"
               />
             </div>
 
+            {/* Date */}
             <div>
               <label className="block text-sm font-medium">Date</label>
-              <h2
+              <input
                 name="date"
                 type="text"
                 value={device.date}
                 onChange={handleChange}
-                placeholder=""
                 className="w-full mt-1 p-3 border border-gray-300 rounded"
-              >
-                {device.date}
-              </h2>
+                readOnly
+              />
             </div>
 
+            {/* Device Image */}
             <div>
               <label className="block text-sm font-medium">
                 Upload Device Image
@@ -218,22 +269,34 @@ export default function RegisterDevice() {
                 onChange={handleChange}
                 className="w-full mt-1"
               />
+              {imagePreview && (
+                <img
+                  src={imagePreview}
+                  alt={device.name}
+                  className="w-32 h-32 object-cover rounded"
+                />
+              )}
             </div>
 
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
-              onClick={(e) => handleSubmit(e)}
             >
               Submit Device
             </button>
+
           </form>
 
-          {isSubmmitted && (
+          {/* Success Message */}
+          {isSubmitted && (
             <div className="mt-6 p-4 bg-green-100 border border-green-400 rounded">
               <h2 className="text-lg font-bold">Device Registered:</h2>
               <h2>
                 Type : <strong>{device.type}</strong>
+              </h2>
+              <h2>
+                Semester : <strong>{device.semester}</strong>
               </h2>
               <h2>
                 Brand : <strong>{device.brand}</strong>
@@ -248,7 +311,7 @@ export default function RegisterDevice() {
                 Matric : <strong>{device.matric}</strong>
               </h2>
               <h2>
-                Matric : <strong>{device.date}</strong>
+                Date : <strong>{device.date}</strong>
               </h2>
             </div>
           )}

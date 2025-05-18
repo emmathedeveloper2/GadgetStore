@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
+import { NavLink } from "react-router-dom";
 
 export default function Mydevice() {
   const [devices, setDevices] = useState(() => {
@@ -10,6 +11,7 @@ export default function Mydevice() {
   });
   const [editingDevice, setEditingDevice] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [deletedDeviceId, setDeletedDeviceId] = useState(null);
 
   useEffect(() => {
     const storedDevices = JSON.parse(localStorage.getItem("devices")) || [];
@@ -21,9 +23,13 @@ export default function Mydevice() {
       "Are you sure you want to delete this device?"
     );
     if (confirm) {
-      const updated = devices.filter((d) => d.id !== id);
-      setDevices(updated);
-      localStorage.setItem("device", JSON.stringify(updated));
+      setDeletedDeviceId(id); // trigger animation
+      setTimeout(() => {
+        const updated = devices.filter((d) => d.id !== id);
+        setDevices(updated);
+        localStorage.setItem("devices", JSON.stringify(updated));
+        setDeletedDeviceId(null); // reset
+      }, 300); // match animation duration
     }
   };
 
@@ -53,7 +59,7 @@ export default function Mydevice() {
       <Sidebar />
       <div className="flex-1 md:ml-52">
         <Topbar />
-        <main className="mt-20 p-6">
+        <main className="mt-40 p-6">
           <div className="flex items-center justify-center mb-6 gap-4 md:mt-0 mt-10">
             <input
               type="text"
@@ -62,12 +68,31 @@ export default function Mydevice() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border border-gray-300 rounded w-96 px-4 py-2 focus:outline-0"
             />
+
             <button
               className="text-sm bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
               onClick={() => setSearchTerm("")}
             >
               Search
             </button>
+
+            <div required>
+              <select
+                name="semester"
+                required
+                className="w-[300px] mt-1 p-2 border border-gray-300 rounded"
+              >
+                <option value="">-- Select Semester --</option>
+                <option>
+                  {" "}
+                  <NavLink to="/">Alpha</NavLink>
+                </option>
+                <option>
+                  {" "}
+                  <NavLink to="/">Omega</NavLink>
+                </option>
+              </select>
+            </div>
           </div>
           <h2 className="text-2xl font-bold mb-6">Registered Devices</h2>
 
@@ -80,7 +105,13 @@ export default function Mydevice() {
               {filteredDevices.map((device) => (
                 <div
                   key={device.id}
-                  className="border border-gray-200 rounded shadow p-4 flex flex-col"
+                  className={`border border-gray-200 rounded shadow p-4 flex flex-col transition-all duration-300 ease-in-out transform
+    ${
+      deletedDeviceId === device.id
+        ? "opacity-0 scale-95"
+        : "opacity-100 scale-100"
+    }
+  `}
                 >
                   <img
                     src={device.image}
@@ -128,7 +159,7 @@ export default function Mydevice() {
             </div>
           )}
           {editingDevice && (
-            <form onSubmit={handleUpdate} className="flex flex-col w-96">  
+            <form onSubmit={handleUpdate} className="flex flex-col w-96">
               <input
                 value={editingDevice.type}
                 onChange={(e) =>
@@ -148,7 +179,6 @@ export default function Mydevice() {
                 onChange={(e) =>
                   setEditingDevice({ ...editingDevice, name: e.target.value })
                 }
-
                 placeholder="Name"
               />
               <input

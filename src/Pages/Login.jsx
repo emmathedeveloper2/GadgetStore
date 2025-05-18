@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function Login() {
-  const [studentId, setStudentId] = useState("DU0459")
+  const [studentId, setStudentId] = useState("Dominion")
   const [password, setPassword] = useState("12345678")
   const navigate = useNavigate()
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (studentId === "DU0459" && password === "12345678") {
+    if (studentId === "Dominion" && password === "12345678") {
       navigate("/dashboard")
     } else {
       alert("Error: Invalid Student ID or Password")
@@ -21,7 +21,7 @@ export default function Login() {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-sm font-medium">ID</label>
             <input
@@ -45,7 +45,6 @@ export default function Login() {
           <button
             type="submit"
             className="w-full bg-[#2D2D31] text-white py-2 px-4 rounded hover:bg-[#474747] transition cursor-pointer"
-            onClick={handleSubmit}
           >
             Login
           </button>
