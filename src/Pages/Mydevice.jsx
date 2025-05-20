@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
-import { NavLink } from "react-router-dom";
 
 export default function Mydevice() {
   const [devices, setDevices] = useState(() => {
@@ -12,6 +11,7 @@ export default function Mydevice() {
   const [editingDevice, setEditingDevice] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [deletedDeviceId, setDeletedDeviceId] = useState(null);
+  const [selectedSemester, setSelectedSemester] = useState(""); // NEW
 
   useEffect(() => {
     const storedDevices = JSON.parse(localStorage.getItem("devices")) || [];
@@ -50,9 +50,15 @@ export default function Mydevice() {
     setDevices(updatedDevices);
   }
 
-  const filteredDevices = devices.filter((device) =>
-    device.matric.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Filter devices by search term and selected semester
+  const filteredDevices = devices.filter((device) => {
+    const matchesMatric = device.matric
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesSemester =
+      !selectedSemester || device.semester === selectedSemester;
+    return matchesMatric && matchesSemester;
+  });
 
   return (
     <div className="flex">
@@ -76,23 +82,16 @@ export default function Mydevice() {
               Search
             </button>
 
-            <div required>
-              <select
-                name="semester"
-                required
-                className="w-[300px] mt-1 p-2 border border-gray-300 rounded"
-              >
-                <option value="">-- Select Semester --</option>
-                <option>
-                  {" "}
-                  <NavLink to="/">Alpha</NavLink>
-                </option>
-                <option>
-                  {" "}
-                  <NavLink to="/">Omega</NavLink>
-                </option>
-              </select>
-            </div>
+            <select
+              name="semester"
+              value={selectedSemester}
+              onChange={(e) => setSelectedSemester(e.target.value)}
+              className="w-[300px] mt-1 p-2 border border-gray-300 rounded"
+            >
+              <option value="">All Semesters</option>
+              <option value="Alpha Semester">Alpha Semester</option>
+              <option value="Omega Semester">Omega Semester</option>
+            </select>
           </div>
           <h2 className="text-2xl font-bold mb-6">Registered Devices</h2>
 
@@ -158,53 +157,132 @@ export default function Mydevice() {
               ))}
             </div>
           )}
+
           {editingDevice && (
-            <form onSubmit={handleUpdate} className="flex flex-col w-96">
-              <input
-                value={editingDevice.type}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, type: e.target.value })
-                }
-                placeholder="Type"
-              />
-              <input
-                value={editingDevice.brand}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, brand: e.target.value })
-                }
-                placeholder="Brand"
-              />
-              <input
-                value={editingDevice.name}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, name: e.target.value })
-                }
-                placeholder="Name"
-              />
-              <input
-                value={editingDevice.serial}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, serial: e.target.value })
-                }
-                placeholder="Serial"
-              />
-              <input
-                value={editingDevice.mac}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, mac: e.target.value })
-                }
-                placeholder="Mac"
-              />
-              <input
-                value={editingDevice.matric}
-                onChange={(e) =>
-                  setEditingDevice({ ...editingDevice, matric: e.target.value })
-                }
-                placeholder="Matric"
-              />
-              <button type="submit">Save</button>
-              <button onClick={() => setEditingDevice(null)}>Cancel</button>
-            </form>
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+              <form
+                onSubmit={handleUpdate}
+                className="flex flex-col w-96 bg-white p-8 rounded shadow-lg relative"
+              >
+                <div>
+                  <label className="block text-sm font-medium">
+                    Device Type
+                  </label>
+                  <input
+                    value={editingDevice.type}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        type: e.target.value,
+                      })
+                    }
+                    placeholder="Type"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">
+                    Device brand
+                  </label>
+                  <input
+                    value={editingDevice.brand}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        brand: e.target.value,
+                      })
+                    }
+                    placeholder="Brand"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">
+                    Device name
+                  </label>
+                  <input
+                    value={editingDevice.name}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        name: e.target.value,
+                      })
+                    }
+                    placeholder="Name"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">
+                    Serial number
+                  </label>
+                  <input
+                    value={editingDevice.serial}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        serial: e.target.value,
+                      })
+                    }
+                    placeholder="Serial"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">
+                    Device mac
+                  </label>
+                  <input
+                    value={editingDevice.mac}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        mac: e.target.value,
+                      })
+                    }
+                    placeholder="Mac"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">
+                    Matric
+                  </label>
+                  <input
+                    value={editingDevice.matric}
+                    onChange={(e) =>
+                      setEditingDevice({
+                        ...editingDevice,
+                        matric: e.target.value,
+                      })
+                    }
+                    placeholder="Matric"
+                    className="mb-2 p-2  mt-1 border-gray-300 border rounded w-full"
+                  />
+                </div>
+
+                <div className="flex gap-2 mt-2">
+                  <button
+                    type="submit"
+                    className="flex-1 bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setEditingDevice(null)}
+                    className="flex-1 bg-gray-300 text-gray-700 py-2 rounded hover:bg-gray-400"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
           )}
         </main>
       </div>

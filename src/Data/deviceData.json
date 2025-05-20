@@ -2680,8 +2680,8 @@
         "DeviceType": "Mifi"
     },
     {
-        "DeviceBrand": "",
-        "DeviceName": "",
-        "DeviceType": ""
+        "DeviceBrand": "Samsung",
+        "DeviceName": "fold 4",
+        "DeviceType": "Tab"
     }
 ]

@@ -136,9 +136,8 @@ export default function RegisterDevice() {
                 onChange={handleChange}
                 className="w-[500px] mt-1 p-2 border border-gray-300 rounded"
               >
-                <option value="">-- Select Semester --</option>
-                <option>Alpha</option>
-                <option>Omega</option>
+                <option>Alpha Semester</option>
+                <option>Omega Semester</option>
               </select>
             </div>
 
