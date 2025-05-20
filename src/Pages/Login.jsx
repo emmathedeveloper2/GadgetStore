@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import WaterDrop from '../Components/WaterDrop';
 
 
-
 export default function Login() {
   const [studentId, setStudentId] = useState("Dominion")
   const [password, setPassword] = useState("12345678")
@@ -20,11 +19,13 @@ export default function Login() {
     }
   }
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-       <div className=''>
-        <WaterDrop/>
-       </div>
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
+      {/* WaterDrop background */}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
+        <WaterDrop />
+      </div>
+      {/* Login form */}
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-md z-10 relative">
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -58,7 +59,7 @@ export default function Login() {
             <a href="#" className="text-sm text-blue-500 hover:underline">
               Forgot Password?
             </a>
-            </div>
+          </div>
         </form>
       </div>
     </div>

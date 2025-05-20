@@ -2683,5 +2683,160 @@
         "DeviceBrand": "Samsung",
         "DeviceName": "fold 4",
         "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Z Flip 4",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Z Fold 4",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy S23 Ultra",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy S23+",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy S23",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Fold 4",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "Watch Series 9",
+        "DeviceType": "Wristwatch"
+    },
+    {
+        "DeviceBrand": "Huawei",
+        "DeviceName": "E5576",
+        "DeviceType": "MiFi"
+    },
+    {
+        "DeviceBrand": "Oraimo",
+        "DeviceName": "FreePods 3",
+        "DeviceType": "Airpod"
+    },
+    {
+        "DeviceBrand": "Nokia",
+        "DeviceName": "105",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Pop 7",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "Pavilion x360",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Infinix",
+        "DeviceName": "Zero Ultra",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "iPad Pro 12.9",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Oraimo",
+        "DeviceName": "Tempo W2",
+        "DeviceType": "Wristwatch"
+    },
+    {
+        "DeviceBrand": "ZTE",
+        "DeviceName": "MF920U",
+        "DeviceType": "MiFi"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Buds 2",
+        "DeviceType": "Airpod"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "2160",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Lenovo",
+        "DeviceName": "Tab M10",
+        "DeviceType": "Tab"
+    },
+    {
+        "DeviceBrand": "Apple",
+        "DeviceName": "AirPods Pro 2",
+        "DeviceType": "Airpod"
+    },
+    {
+        "DeviceBrand": "Gionee",
+        "DeviceName": "L800",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "HP",
+        "DeviceName": "EliteBook 840",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Infinix",
+        "DeviceName": "Hot 40 Pro",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Tecno",
+        "DeviceName": "Camon 20 Premier",
+        "DeviceType": "Phone"
+    },
+    {
+        "DeviceBrand": "Oraimo",
+        "DeviceName": "Watch 2 Pro",
+        "DeviceType": "Wristwatch"
+    },
+    {
+        "DeviceBrand": "MTN",
+        "DeviceName": "MiFi 4G LTE",
+        "DeviceType": "MiFi"
+    },
+    {
+        "DeviceBrand": "Samsung",
+        "DeviceName": "Galaxy Fit 3",
+        "DeviceType": "Wristwatch"
+    },
+    {
+        "DeviceBrand": "Asus",
+        "DeviceName": "ROG Zephyrus G14",
+        "DeviceType": "Laptop"
+    },
+    {
+        "DeviceBrand": "Beats",
+        "DeviceName": "Studio Buds",
+        "DeviceType": "Airpod"
+    },
+    {
+        "DeviceBrand": "Alcatel",
+        "DeviceName": "MW40",
+        "DeviceType": "MiFi"
+    },
+    {
+        "DeviceBrand": "Itel",
+        "DeviceName": "Vision 5",
+        "DeviceType": "Phone"
     }
 ]
