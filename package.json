@@ -15,7 +15,7 @@
     "@mui/material": "^7.1.0",
     "@mui/x-charts": "^8.3.0",
     "@tailwindcss/vite": "^4.1.5",
-    "@vercel/blob": "^1.0.2",
+    "@vercel/blob": "^1.1.0",
     "animejs": "^4.0.2",
     "chart.js": "^4.4.9",
     "framer-motion": "^12.12.1",

@@ -1,19 +1,19 @@
-// api/upload.js
-import { put } from '@vercel/blob';
- 
+// /api/upload.ts
+import { put } from "@vercel/blob";
+
 export const config = {
-  runtime: 'edge',
+  api: {
+    bodyParser: false,
+  },
 };
- 
-export default async function handler(request) {
-  const { searchParams } = new URL(request.url);
-  const filename = searchParams.get('filename');
 
-  const blob = await put(filename, request.body, {
-    access: 'public',
+export default async function handler(req, res) {
+  const { searchParams } = new URL(req.url, `http://${req.headers.host}`);
+  const filename = searchParams.get("filename") || "file";
+
+  const blob = await put(filename, req, {
+    access: "public",
   });
 
-  return new Response(JSON.stringify(blob), {
-    headers: { 'Content-Type': 'application/json' },
-  });
+  return res.status(200).json(blob);
 }
