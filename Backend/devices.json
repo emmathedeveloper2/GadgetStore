@@ -10,5 +10,17 @@
     "semester": "Alpha Semester",
     "date": "25/05/2025",
     "id": 1748213542174
+  },
+  {
+    "type": "Laptop",
+    "brand": "HP",
+    "name": "EliteBook 2560p",
+    "serial": "11-22-22222",
+    "mac": "00:1B:44:11:3A:B7",
+    "matric": "DU0567",
+    "image": "/laptop.webp",
+    "semester": "Alpha Semester",
+    "date": "25/05/2025",
+    "id": 1748213840166
   }
 ]
