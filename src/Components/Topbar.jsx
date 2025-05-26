@@ -3,6 +3,7 @@ import { IoIosSettings } from "react-icons/io";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
 
+
 export default function Topbar() {
   return (
     <header className="px-4 md:px-6 py-4 fixed top-0 left-0 md:left-52 right-0 z-10">
@@ -17,11 +18,7 @@ export default function Topbar() {
 
         {/* Right Section */}
         <div className="flex items-center gap-3 w-full md:w-auto">
-          <input
-            type="text"
-            placeholder="Search here"
-            className="border border-gray-300 h-9 w-full md:w-40 rounded-md p-2 text-sm focus:outline-none"
-          />
+
           <IoMdNotificationsOutline className="text-xl cursor-pointer hover:text-blue-500" />
           <IoIosSettings className="text-xl cursor-pointer hover:text-green-500" />
           <FaUserCircle className="text-xl text-gray-600 cursor-pointer hover:text-red-500" />
