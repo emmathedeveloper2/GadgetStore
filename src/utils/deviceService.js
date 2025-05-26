@@ -1,4 +1,4 @@
-import { db, storage } from "../lib/Firebase";
+import { db, storage } from "../lib/Firebase.js";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
@@ -13,7 +13,7 @@ export const uploadImage = async (file) => {
 export const saveDevice = async (device) => {
   let imageUrl = "";
 
-  // If an image file is present, upload it first
+
   if (device.image instanceof File) {
     imageUrl = await uploadImage(device.image);
   }
@@ -21,10 +21,10 @@ export const saveDevice = async (device) => {
   // Prepare the device data for saving
   const deviceData = {
     ...device,
-    image: imageUrl || "", // Save image URL (empty if not uploaded)
+    image: imageUrl || "",
   };
 
-  // Save to Firestore
+
   const docRef = await addDoc(collection(db, "devices"), deviceData);
   return docRef.id;
 };
