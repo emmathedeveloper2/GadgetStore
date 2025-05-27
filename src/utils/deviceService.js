@@ -9,6 +9,7 @@ export async function getDevices() {
   }));
 }
 
+
 // Convert file to Base64
 const toBase64 = (file) =>
   new Promise((resolve, reject) => {
