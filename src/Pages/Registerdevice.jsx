@@ -108,11 +108,22 @@ export default function RegisterDevice() {
       reader.readAsDataURL(file);
     });
 
+  function formatDeviceDate(dateStr) {
+    if (!dateStr) return "N/A";
+    // Try to parse as YYYY-MM-DD
+    const date = new Date(dateStr);
+    if (isNaN(date)) return dateStr; // fallback if invalid
+    const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
+    const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+
   return (
     <div className="flex">
       <Sidebar />
       <div className="flex-1 md:ml-52 md:mt-0 mt-10">
-        <Topbar pageName="Register"/>
+        <Topbar pageName="Register" />
         <main className="mt-20 flex flex-col justify-center items-center  p-6">
           <h2 className="text-2xl font-bold mb-6 text-center">
             Register New Device
@@ -248,7 +259,7 @@ export default function RegisterDevice() {
               <input
                 name="date"
                 type="text"
-                value={device.date}
+                value={formatDeviceDate(device.date)}
                 onChange={handleChange}
                 className="w-full mt-1 p-3 border border-gray-300 rounded"
                 readOnly
@@ -270,9 +281,7 @@ export default function RegisterDevice() {
                 className="hidden"
               />
               <p onClick={() => fileInputRef.current.click()}>
-                <FaPlus
-                  className="text-5xl border-2 border-gray-300 hover:bg-gray-300 hover:text-white p-2  text-gray-400 cursor-pointer"
-                />
+                <FaPlus className="text-5xl border-2 border-gray-300 hover:bg-gray-300 hover:text-white p-2  text-gray-400 cursor-pointer" />
               </p>
               {imagePreview && (
                 <img

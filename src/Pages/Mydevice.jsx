@@ -49,7 +49,13 @@ export default function Mydevice() {
   function handleEdit(device) {
     setEditingDevice(device);
   }
-
+  const sortedDevices = [...devices].sort((a, b) => {
+  // If date is missing, treat as oldest
+  if (!a.date) return 1;
+  if (!b.date) return -1;
+  // Compare as strings (assuming ISO format: YYYY-MM-DD)
+  return b.date.localeCompare(a.date);
+});
   const handleUpdate = async (e) => {
     e.preventDefault();
     if (!editingDevice) return;
@@ -63,7 +69,18 @@ export default function Mydevice() {
     }
   };
 
-  const filteredDevices = devices.filter((device) => {
+function formatDeviceDate(dateStr) {
+  if (!dateStr) return "N/A";
+  // Try to parse as YYYY-MM-DD
+  const date = new Date(dateStr);
+  if (isNaN(date)) return dateStr; // fallback if invalid
+  const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
+  const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+}
+
+  const filteredDevices = sortedDevices.filter((device) => {
     const matchesMatric = device.matric
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
@@ -135,8 +152,8 @@ export default function Mydevice() {
           {searchDate && (
             <div className="text-center mb-2 text-red-300 font-semibold">
               {filteredDevices.length} device
-              {filteredDevices.length !== 1 ? "s" : ""} found for Date "
-              {searchDate}"
+              {filteredDevices.length !== 1 ? "s" : ""} found for Day "
+              {searchDate}th"
             </div>
           )}
 
@@ -185,7 +202,7 @@ export default function Mydevice() {
                     <strong>Matric:</strong> {device.matric}
                   </div>
                   <div className="mb-4 text-sm text-gray-600">
-                    <strong>Date:</strong> {device.date|| "N/A"}
+                    <strong>Date:</strong> {formatDeviceDate(device.date)}
                   </div>
 
                   <div className="mt-auto flex flex-col sm:flex-row gap-2 justify-between">

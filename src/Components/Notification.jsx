@@ -8,13 +8,13 @@ export default function Notification({ isOpen, onClose }) {
   useEffect(() => {
     async function fetchData() {
       const data = await getDevices(); 
-      setDevices(data.slice(-5)); 
+      setDevices(data.slice(-7)); 
     }
     if (isOpen) fetchData();
   }, [isOpen]);
 
   return (
-    <div className={`text2 fixed top-2 right-2 h-[977px] p-4 bg-[#2D2D31] text-white rounded-md  w-64 transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+    <div className={`text2 fixed top-2 right-1 h-[977px] p-4 bg-[#2D2D31] text-white rounded-md  w-64 transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
       <div className="p-4 flex justify-between items-center border-b">
         <h2 className="font-bold">Recent Devices</h2>
         <button onClick={onClose} className="cursor-pointer active:text-red-400">✖</button>

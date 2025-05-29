@@ -49,7 +49,7 @@ export default function Dashboard() {
       <Sidebar />
       <div className="flex-1 md:ml-52  transition-all duration-300">
         <Topbar />
-        <main className="mt-20 p-4 md:p-2">
+        <main className="mt-25 p-4 md:p-2">
           {/* Info Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 text-white">
             {cards.map((card, index) => (
@@ -72,7 +72,7 @@ export default function Dashboard() {
           </div>
 
           {/* Chart + Projects */}
-          <div className="mt-10">
+          <div>
             <Chart />
             <Project />
           </div>
