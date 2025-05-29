@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import { fetchDevices, deleteDevice, updateDevice } from "../../lib/Firebase";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
-
-const defaultImage = () => {
-
-};
+const defaultImage = () => {};
 
 export default function Mydevice() {
   const [devices, setDevices] = useState([]);
@@ -50,12 +58,12 @@ export default function Mydevice() {
     setEditingDevice(device);
   }
   const sortedDevices = [...devices].sort((a, b) => {
-  // If date is missing, treat as oldest
-  if (!a.date) return 1;
-  if (!b.date) return -1;
-  // Compare as strings (assuming ISO format: YYYY-MM-DD)
-  return b.date.localeCompare(a.date);
-});
+    // If date is missing, treat as oldest
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    // Compare as strings (assuming ISO format: YYYY-MM-DD)
+    return b.date.localeCompare(a.date);
+  });
   const handleUpdate = async (e) => {
     e.preventDefault();
     if (!editingDevice) return;
@@ -69,16 +77,16 @@ export default function Mydevice() {
     }
   };
 
-function formatDeviceDate(dateStr) {
-  if (!dateStr) return "N/A";
-  // Try to parse as YYYY-MM-DD
-  const date = new Date(dateStr);
-  if (isNaN(date)) return dateStr; // fallback if invalid
-  const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
-  const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
-  const year = date.getFullYear();
-  return `${day}/${month}/${year}`;
-}
+  function formatDeviceDate(dateStr) {
+    if (!dateStr) return "N/A";
+    // Try to parse as YYYY-MM-DD
+    const date = new Date(dateStr);
+    if (isNaN(date)) return dateStr; // fallback if invalid
+    const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
+    const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
 
   const filteredDevices = sortedDevices.filter((device) => {
     const matchesMatric = device.matric
@@ -88,7 +96,7 @@ function formatDeviceDate(dateStr) {
     let matchesDate = true;
     if (searchDate) {
       if (device.date) {
-        matchesDate = device.date.startsWith(searchDate); 
+        matchesDate = device.date.startsWith(searchDate);
       } else {
         matchesDate = false;
       }
@@ -206,12 +214,31 @@ function formatDeviceDate(dateStr) {
                   </div>
 
                   <div className="mt-auto flex flex-col sm:flex-row gap-2 justify-between">
-                    <button
-                      className="text-sm bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 cursor-pointer"
-                      onClick={() => handleDelete(device.id)}
-                    >
-                      Delete
-                    </button>
+                    <AlertDialog>
+                      <AlertDialogTrigger className="text-sm bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 cursor-pointer">
+                        Delete
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>
+                            Are you absolutely sure?
+                          </AlertDialogTitle>
+                          <AlertDialogDescription>
+                            This action cannot be undone. This will permanently
+                            delete this Device and remove the data from the
+                            servers.
+                          </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>Cancel</AlertDialogCancel>
+                          <AlertDialogAction
+                            onClick={() => handleDelete(device.id)}
+                          >
+                            Continue
+                          </AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
                     <button
                       className="text-sm bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 cursor-pointer"
                       onClick={() => handleEdit(device)}
@@ -226,7 +253,7 @@ function formatDeviceDate(dateStr) {
 
           {/* EDIT MODAL */}
           {editingDevice && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm px-2">
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-none px-2">
               <form
                 onSubmit={handleUpdate}
                 className="flex flex-col w-full max-w-md bg-white p-4 sm:p-8 rounded shadow-lg relative"
@@ -271,7 +298,6 @@ function formatDeviceDate(dateStr) {
                 </div>
               </form>
             </div>
-            
           )}
         </main>
       </div>

@@ -22,6 +22,7 @@ export default function RegisterDevice() {
   const [filteredBrands, setFilteredBrands] = useState([]);
   const [filteredNames, setFilteredNames] = useState([]);
   const [imagePreview, setImagePreview] = useState("");
+    const [successMessage, setSuccessMessage] = useState("");
   const fileInputRef = useRef(null);
 
   useEffect(() => {
@@ -79,7 +80,8 @@ export default function RegisterDevice() {
       const deviceWithImage = { ...device, image: imageBase64 };
 
       await saveDevice(deviceWithImage);
-      alert("Device saved successfully!");
+      setSuccessMessage("✅ Device registered successfully!");
+      setTimeout(() => setSuccessMessage(""), 3000);
 
       setDevice({
         type: "",
@@ -96,7 +98,8 @@ export default function RegisterDevice() {
       // setIsSubmitted(true);
     } catch (err) {
       console.error("Error saving device:", err);
-      alert("There was a problem saving the device.");
+      setSuccessMessage("❌ There was a problem saving the device.");
+      setTimeout(() => setSuccessMessage(""), 3000);
     }
   };
 
@@ -128,6 +131,11 @@ export default function RegisterDevice() {
           <h2 className="text-2xl font-bold mb-6 text-center">
             Register New Device
           </h2>
+          {successMessage && (
+            <div className="mb-4 w-full max-w-xl text-center p-3 rounded bg-green-100 text-green-700 border border-green-300 shadow">
+              {successMessage}
+            </div>
+          )}
           <form
             onSubmit={handleSubmit}
             className="bg-transparent p-6 rounded shadow-2xl max-w-xl space-y-4 focus:outline-none"
