@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Chart from "../components/Chart";
-import Project from "../components/projects";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Chart from "../Components/Chart";
+import Project from "../Components/projects";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
 import { FaUser } from "react-icons/fa";
 
 const initialCards = [

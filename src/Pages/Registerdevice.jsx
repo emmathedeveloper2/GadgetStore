@@ -1,5 +1,5 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Sidebar from "../Components/Sidebar";
+import Topbar from "../Components/Topbar";
 import { useState, useEffect, useRef } from "react";
 import deviceData from "../Data/deviceData.json";
 import { saveDevice } from "../utils/deviceService.js";
