@@ -1,9 +1,9 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
-import Registerdevice from "./pages/Registerdevice";
-import Mydevice from "./pages/Mydevice";
+import Dashboard from "@/pages/Dashboard";
+import Registerdevice from "@/pages/Registerdevice";
+import Mydevice from "@/pages/Mydevice";
 // import { CheckboxReactHookFormSingle } from "./Components/CheckboxReactHookFormSingle";
 
 const App = ()  => {
