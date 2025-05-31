@@ -1,6 +1,6 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
+import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard";
 import Registerdevice from "./pages/Registerdevice";
 import Mydevice from "./pages/Mydevice";
