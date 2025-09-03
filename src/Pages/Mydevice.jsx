@@ -32,7 +32,7 @@ export default function Mydevice() {
       const data = await fetchDevices(COLLECTION_NAME);
       setDevices(data);
     } catch (error) {
-      console.error("Error loading devices:", error);
+      error("Error loading devices:", error);
     }
   };
 
@@ -50,7 +50,7 @@ export default function Mydevice() {
         setDeletedDeviceId(null);
       }, 300);
     } catch (error) {
-      console.error("Error deleting device:", error);
+      error("Error deleting device:", error);
     }
   };
 
@@ -73,7 +73,7 @@ export default function Mydevice() {
       setEditingDevice(null);
       loadDevices();
     } catch (error) {
-      console.error("Error updating device:", error);
+      error("Error updating device:", error);
     }
   };
 

@@ -97,7 +97,7 @@ export default function RegisterDevice() {
       setImagePreview("");
       // setIsSubmitted(true);
     } catch (err) {
-      console.error("Error saving device:", err);
+      // console.error("Error saving device:", err);
       setSuccessMessage("❌ There was a problem saving the device.");
       setTimeout(() => setSuccessMessage(""), 3000);
     }

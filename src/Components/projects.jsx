@@ -1,17 +1,47 @@
 import { FaUser } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import DownloadCSV from "./DownloadCsv";
 import download from "/download.jpg";
+import { fetchDevices } from "../../lib/Firebase";
 
 export default function Project() {
+  const [devicesThisMonth, setDevicesThisMonth] = useState(0);
+
+  useEffect(() => {
+    async function loadDevices() {
+      try {
+        const data = await fetchDevices("devices");
+        const now = new Date();
+        const currentMonth = now.getMonth();
+        const currentYear = now.getFullYear();
+
+        const count = data
+          .filter((device) => {
+            if (!device.date) return false;
+            const deviceDate = new Date(device.date);
+            return (
+              deviceDate.getMonth() === currentMonth &&
+              deviceDate.getFullYear() === currentYear
+            );
+          }).length;
+
+        setDevicesThisMonth(count);
+      } catch (error) {
+        setDevicesThisMonth(0);
+      }
+    }
+    loadDevices();
+  }, []);
+
   return (
     <div className="md:grid lg:flex justify-between">
       {/* Left Section */}
       <div className="shadow-lg h-96 md:w-[128%] lg:w-[66%] rounded-lg bg-white p-4 mt-5 overflow-auto">
         <div className="font-mono mb-4">
           <p className="text font-bold">Devices</p>
-          <p>✔️ 30 done this month</p>
+          <p>✔️ {devicesThisMonth} done this month</p>
         </div>
 
         {/* Table Header */}
@@ -27,7 +57,7 @@ export default function Project() {
                 <th className="p-2">Time/Date</th>
               </tr>
             </thead>
-            
+
             <tbody className="text-[#344767] font-mono text-sm">
               {[...Array(5)].map((_, index) => (
                 <tr key={index} className="border-t border-[#eaecee]">
@@ -52,7 +82,11 @@ export default function Project() {
 
       {/* Right Section */}
       <div className="shadow-lg h-96 md:w-[128%] lg:w-[32.5%] rounded-lg bg-white mt-5 p-4 text-center justify-center items-center flex">
-        <img src={download} alt=""  className="w-[540px] h-[370px] rounded-2xl absolute"/>
+        <img
+          src={download}
+          alt=""
+          className="w-[540px] h-[370px] rounded-2xl absolute"
+        />
         <div className="relative z-10">
           <DownloadCSV />
         </div>
