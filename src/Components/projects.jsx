@@ -5,18 +5,32 @@ import Topbar from "./Topbar";
 import DownloadCSV from "./DownloadCsv";
 import { fetchDevices } from "../../lib/Firebase";
 
+// Helper function to format date as Mon/April/2025
+function formatDeviceDate(dateStr) {
+  if (!dateStr) return "N/A";
+  const date = new Date(dateStr);
+  if (isNaN(date)) return dateStr;
+  const day = date.toLocaleString("en-US", { weekday: "short" });
+  const month = date.toLocaleString("en-US", { month: "long" });
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+}
+
 export default function Project() {
   const [devicesThisMonth, setDevicesThisMonth] = useState(0);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     async function loadDevices() {
       try {
-        const data = await fetchDevices("devices");
+        const devices = await fetchDevices("devices");
+        setData(devices);
+
         const now = new Date();
         const currentMonth = now.getMonth();
         const currentYear = now.getFullYear();
 
-        const count = data
+        const count = devices
           .filter((device) => {
             if (!device.date) return false;
             const deviceDate = new Date(device.date);
@@ -29,6 +43,7 @@ export default function Project() {
         setDevicesThisMonth(count);
       // eslint-disable-next-line no-unused-vars
       } catch (error) {
+        setData([]);
         setDevicesThisMonth(0);
       }
     }
@@ -59,22 +74,37 @@ export default function Project() {
             </thead>
 
             <tbody className="text-[#344767] font-mono text-sm">
-              {[...Array(5)].map((_, index) => (
-                <tr key={index} className="border-t border-[#eaecee]">
-                  <td className="p-2 flex items-center gap-2 text-[#929DAE]">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                      alt="device"
-                      className="h-5 w-5 rounded-full"
-                    />
-                    DU0459
-                  </td>
-                  <td className="p-2">Laptop</td>
-                  <td className="p-2">2</td>
-                  <td className="p-2 text-green-600 font-medium">Completed</td>
-                  <td className="p-2 text-[#929DAE]">8:00 PM</td>
+              {Array.isArray(devicesThisMonth) && devicesThisMonth.length === 0 ? (
+                <tr>
+                  <td colSpan={5} className="text-center p-4 text-gray-400">No devices registered this month.</td>
                 </tr>
-              ))}
+              ) : (
+                data
+                  .slice(-7) // Show last 7 devices
+                  .map((device, index) => {
+                    // Count how many times this matric appears
+                    const amount = data.filter(d => d.matric === device.matric).length;
+                    // Format the device date
+                    const dateStr = formatDeviceDate(device.date);
+
+                    return (
+                      <tr key={index} className="border-t border-[#eaecee]">
+                        <td className="p-2 flex items-center gap-2 text-[#929DAE]">
+                          <img
+                            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                            alt="device"
+                            className="h-5 w-5 rounded-full"
+                          />
+                          {device.matric}
+                        </td>
+                        <td className="p-2">{device.name}</td>
+                        <td className="p-2">{amount}</td>
+                        <td className="p-2 text-green-600 font-medium">Completed</td>
+                        <td className="p-2 text-[#929DAE]">{dateStr}</td>
+                      </tr>
+                    );
+                  })
+              )}
             </tbody>
           </table>
         </div>
