@@ -48,6 +48,16 @@ export default function RegisterDevice() {
         image: files[0],
       }));
       setImagePreview(URL.createObjectURL(files[0]));
+    } else if (name === "matric") {
+      // Always uppercase and start with DU
+      let matricValue = value.toUpperCase();
+      if (!matricValue.startsWith("DU")) {
+        matricValue = "DU" + matricValue.replace(/^DU/i, "");
+      }
+      setDevice((prev) => ({
+        ...prev,
+        matric: matricValue,
+      }));
     } else {
       setDevice((prev) => ({
         ...prev,
