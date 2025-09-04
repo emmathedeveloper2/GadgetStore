@@ -8,8 +8,8 @@ import { FaUser } from "react-icons/fa";
 const initialCards = [
   { color: "bg-black", label: "Students", value: 760, change: "+55%" },
   { color: "bg-green-600", label: "Gadgets", value: 7600, change: "+55%" },
-  { color: "bg-blue-400", label: "Students", value: "26k", change: "+5%" },
-  { color: "bg-red-500", label: "Students", value: "+76", change: "+75%" },
+  { color: "bg-blue-400", label: "Alpha Semester", value: "26k", change: "+5%" },
+  { color: "bg-red-500", label: "Omega Semester", value: "+76", change: "+75%" },
 ];
 
 export default function Dashboard() {

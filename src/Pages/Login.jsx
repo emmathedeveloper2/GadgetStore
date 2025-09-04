@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
       {/* WaterDrop background */}
-      <div className="absolute right-2 bottom-0 sm:right-5">
+      <div className="absolute left-435 bottom-0 sm:right-5">
         <DivOrigami/>
       </div>
       <div className="absolute inset-0 flex items-center justify-center z-0">
@@ -66,6 +66,13 @@ export default function Login() {
             </a>
           </div>
         </form>
+      </div>
+      {/* Handwriting text bottom right */}
+      <div
+        className="fixed bottom-4 text  right-4 z-50 text-black font-bold text-lg"
+        style={{ fontFamily: "'Dancing Script', cursive" }}
+      >
+        <i>Hardelz • LightArts • NACOS DU</i>
       </div>
     </div>
   );
