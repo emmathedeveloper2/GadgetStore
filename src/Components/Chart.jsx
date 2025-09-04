@@ -30,7 +30,7 @@ const data = {
   datasets: [
     {
       label: "Gadget",
-      data: [60, 50, 30, 20, 40, 10],
+      data: [10, 10, 0, 10, 0, 0],
       backgroundColor: "white",
       borderColor: "#000000",
       borderWidth: 0,
@@ -93,7 +93,7 @@ const lineData = {
   datasets: [
     {
       label: "Devices Over Time",
-      data: [0, 0, 300, 350, 450, 250, 200, 350, 400],
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 10],
       borderColor: "white",
       backgroundColor: "rgba(76, 175, 80, 0.2)",
       borderWidth: 2,
@@ -194,11 +194,10 @@ export default function Chart() {
           </div>
         </div>
         <div className="p-4  text-[#929DAE] font-mono">
-          <p className="font-medium text-black">Gadgets view</p>
+          <p className="font-medium text-black">Device view</p>
 
           <p className="text2 mt-2 flex items-center gap-1">
             <IoTimeOutline />
-            Updated 4 min ago
           </p>
         </div>
       </div>
@@ -211,11 +210,10 @@ export default function Chart() {
           </div>
         </div>
         <div className="p-4  text-[#929DAE] font-mono">
-          <p className="font-medium text-black">Gadgets view</p>
+          <p className="font-medium text-black">Student view</p>
 
           <p className="text2 mt-2 flex items-center gap-1">
             <IoTimeOutline />
-            Updated 4 min ago
           </p>
         </div>
       </div>
@@ -228,11 +226,10 @@ export default function Chart() {
           </div>
         </div>
         <div className="p-4 text-left text-[#929DAE] font-mono">
-          <p className="font-medium text-black">Gadgets view</p>
+          <p className="font-medium text-black">Chart view</p>
 
           <p className="text2 mt-2 flex items-center gap-1">
             <IoTimeOutline />
-            Updated 4 min ago
           </p>
         </div>
       </div>

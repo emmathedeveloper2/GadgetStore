@@ -124,13 +124,13 @@ export default function RegisterDevice() {
 
   function formatDeviceDate(dateStr) {
     if (!dateStr) return "N/A";
-    // Try to parse as YYYY-MM-DD
+    // Use Africa/Lagos timezone for Nigeria (GMT+1)
     const date = new Date(dateStr);
     if (isNaN(date)) return dateStr; // fallback if invalid
-    const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
-    const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
-    const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
+    const day = date.toLocaleString("en-US", { weekday: "short", timeZone: "Africa/Lagos" }); // e.g. Friday
+    const month = date.toLocaleString("en-US", { month: "short", timeZone: "Africa/Lagos" }); // e.g. April
+    const year = date.toLocaleString("en-US", { year: "numeric", timeZone: "Africa/Lagos" }); // e.g. 2023
+    return `${day} / ${month} / ${year}`;
   }
 
   return (
