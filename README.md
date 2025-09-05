@@ -1,6 +1,6 @@
 # 📱 GadgetStore
 
-**GadgetStore** is a lightweight gadget registration and management system developed using **React**, **Vite**, and **TailwindCSS**. It allows users to register gadgets, view all entries, update or delete them, and export the list in CSV format. Gadget data is stored directly in the browser using `localStorage`, making it fully functional without a backend.
+**GadgetStore** is a lightweight gadget registration and management system developed using **React**, **Vite**, **shadcn**, **motion** and **TailwindCSS**. It allows users to register device, view all entries, update or delete them, and export the list in CSV format. Device data is stored directly in the browser using `localStorage`, making it fully functional without a backend.
 
 ---
 
@@ -64,14 +64,15 @@ GadgetStore/
 └── README.md
 
 ## 🔍 How It Works
-Register Gadget
-Users can fill in a form with gadget information. On submission, the data is stored in localStorage.
+Register Device
+Users can fill in a form with device information. On submission, the data is stored in localStorage.
 
-Dashboard
-Displays all registered gadgets. Each entry has options to edit or delete.
+### Dashboard
+Displays all registered devices. Each entry has options to edit or delete.
 
-Edit Gadget
-Updates a gadget’s data by pre-filling the form and saving new input.
+### Edit device
+Updates a device’s data by pre-filling the form and saving new input.
 
-Export to CSV
-Converts gadget list to a .csv file and triggers a download for backup or sharing.
+### Export to CSV
+Converts device list to a .csv file and triggers a download for backup or sharing.
+
