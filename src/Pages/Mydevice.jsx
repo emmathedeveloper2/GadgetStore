@@ -14,7 +14,7 @@ import {
   AlertDialogTrigger,
 } from "@/Components/ui/alert-dialog";
 
-const defaultImage = () => {};
+const defaultImage = () => { };
 
 export default function Mydevice() {
   const [devices, setDevices] = useState([]);
@@ -211,11 +211,10 @@ export default function Mydevice() {
                 <div
                   key={device.id}
                   className={`border border-gray-200 rounded shadow p-4 flex flex-col transition-all duration-300 ease-in-out transform
-                  ${
-                    deletedDeviceId === device.id
+                  ${deletedDeviceId === device.id
                       ? "opacity-0 scale-95"
                       : "opacity-100 scale-100"
-                  }
+                    }
                 `}
                 >
                   <img
