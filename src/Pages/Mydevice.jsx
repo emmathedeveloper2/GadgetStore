@@ -113,6 +113,32 @@ export default function Mydevice() {
     return matchesMatric && matchesSemester && matchesDate;
   });
 
+  function downloadCSV(data, filename = "devices.csv") {
+    if (!data.length) return;
+    const headers = Object.keys(data[0]);
+    const csvRows = [
+      headers.join(","),
+      ...data.map((row) =>
+        headers
+          .map(
+            (field) =>
+              `"${(row[field] ?? "").toString().replace(/"/g, '""')}"`
+          )
+          .join(",")
+      ),
+    ];
+    const csvContent = csvRows.join("\n");
+    const blob = new Blob([csvContent], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
@@ -306,6 +332,14 @@ export default function Mydevice() {
               </form>
             </div>
           )}
+
+          <button
+            className="mb-4 bg-green-600 text-white px-4 py-2 m-4 rounded hover:bg-green-700 transition cursor-pointer"
+            onClick={() => downloadCSV(filteredDevices, "filtered_devices.csv")}
+            disabled={filteredDevices.length === 0}
+          >
+            Download Filtered as CSV
+          </button>
         </main>
       </div>
     </div>
