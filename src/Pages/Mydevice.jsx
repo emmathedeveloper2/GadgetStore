@@ -143,7 +143,7 @@ export default function Mydevice() {
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
       <div className="flex-1 md:ml-52">
-        <Topbar />
+        <Topbar pageName="Devices" middlename="Resgistered device"/>
         <main className="mt-24 md:mt-40 p-2 sm:p-4 md:p-6">
           {/* Search and Filter */}
           <div className="flex flex-col md:flex-row items-center justify-center mb-6 gap-4 md:mt-0 mt-10">

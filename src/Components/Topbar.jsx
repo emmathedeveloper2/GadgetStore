@@ -5,7 +5,7 @@ import { useState } from "react";
 import Notification from "./Notification";
 import { NavLink } from "react-router-dom";
 
-export default function Topbar({ pageName = "Dashboard" }) {
+export default function Topbar({ pageName = "Dashboard" , middlename = "Dashboard"}) {
   const [showSidebar, setShowSidebar] = useState(false);
   const [hasNewNotification] = useState(true);
 
@@ -21,6 +21,12 @@ export default function Topbar({ pageName = "Dashboard" }) {
             <span>/ {pageName}</span>
           </h1>
           <h2 className="font-bold text-green-300 text-lg md:text-xl">{pageName}</h2>
+        </div>
+
+
+        <div>
+          {/* Center Section */}
+          <h1 className="text font-bold text-center">{middlename}</h1>
         </div>
 
         {/* Right Section */}

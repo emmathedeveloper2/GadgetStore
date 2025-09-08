@@ -15,6 +15,8 @@ export default function RegisterDevice() {
     matric: "",
     image: "",
     semester: "",
+    hallresidence: "",
+    gender: "",
     date: new Date().toISOString().slice(0, 10), // <-- ISO format
   });
 
@@ -137,11 +139,8 @@ export default function RegisterDevice() {
     <div className="flex">
       <Sidebar />
       <div className="flex-1 md:ml-52 md:mt-0 mt-10">
-        <Topbar pageName="Register" />
+        <Topbar pageName="Register device" middlename="Register new Device"/>
         <main className="mt-20 flex flex-col justify-center items-center  p-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            Register New Device
-          </h2>
           {successMessage && (
             <div className="mb-4 w-full max-w-xl text-center p-3 rounded bg-green-100 text-green-700 border border-green-300 shadow">
               {successMessage}
@@ -319,35 +318,6 @@ export default function RegisterDevice() {
               Submit Device
             </button>
           </form>
-
-          {/* Success Message */}
-
-          {/* {isSubmitted && (
-            <div className="mt-6 p-4 bg-green-100 border border-green-400 rounded">
-              <h2 className="text-lg font-bold">Device Registered:</h2>
-              <h2>
-                Type : <strong>{device.type}</strong>
-              </h2>
-              <h2>
-                Semester : <strong>{device.semester}</strong>
-              </h2>
-              <h2>
-                Brand : <strong>{device.brand}</strong>
-              </h2>
-              <h2>
-                Serial : <strong>{device.serial}</strong>
-              </h2>
-              <h2>
-                Address : <strong>{device.mac}</strong>
-              </h2>
-              <h2>
-                Matric : <strong>{device.matric}</strong>
-              </h2>
-              <h2>
-                Date : <strong>{device.date}</strong>
-              </h2>
-            </div>
-          )} */}
         </main>
       </div>
     </div>
