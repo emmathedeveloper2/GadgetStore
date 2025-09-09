@@ -66,7 +66,7 @@ export default function DigitalClock({
 
   return (
     <div className="inline-flex items-center justify-center">
-      <div className="flex flex-col items-center p-4  w-56">
+      <div className="flex flex-col items-center">
         {/* <div className="text-xs opacity-90 mb-1">Live — {timezone}</div> */}
 
         <div
@@ -74,18 +74,18 @@ export default function DigitalClock({
           className="flex items-baseline gap-2"
           style={{ lineHeight: 1 }}
         >
-          <div className="text-4xl font-extrabold tracking-tight tabular-nums">
+          <div className="text font-extrabold tracking-tight tabular-nums">
             {hhmmss}
           </div>
           {twelveHour && (
-            <div className="text-sm font-semibold ml-1 self-start opacity-90">
-              {ampm}
+            <div className="text2 font-semibold ml-1 self-start opacity-90">
+              <sup>{ampm}</sup>
             </div>
           )}
         </div>
 
         {showDate && (
-          <div className="mt-2 text-sm opacity-95 text-green-500 text-center">
+          <div className="mt-2 text2 opacity-95 text-green-500 text-center">
             {dateString}
           </div>
         )}

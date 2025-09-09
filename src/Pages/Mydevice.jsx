@@ -14,6 +14,7 @@ import {
   AlertDialogTrigger,
 } from "@/Components/ui/alert-dialog";
 import InternetStatus from "@/Components/InternetStatus";
+import { IoCalendarNumberOutline } from "react-icons/io5";
 
 const defaultImage = () => { };
 
@@ -25,6 +26,7 @@ export default function Mydevice() {
   const [selectedSemester, setSelectedSemester] = useState("");
   const [searchDate, setSearchDate] = useState("");
   const [selectedHall, setSelectedHall] = useState(""); // 1. Add this state
+  const [selectedGender, setSelectedGender] = useState(""); // Add this line
 
   // Define your Firestore collection name
   const COLLECTION_NAME = "devices";
@@ -114,7 +116,11 @@ export default function Mydevice() {
     const matchesHall =
       !selectedHall || (device.hallresidence && device.hallresidence === selectedHall);
 
-    return matchesMatric && matchesSemester && matchesDate && matchesHall;
+    // Filter by gender
+    const matchesGender =
+      !selectedGender || (device.gender && device.gender === selectedGender);
+
+    return matchesMatric && matchesSemester && matchesDate && matchesHall && matchesGender;
   });
 
   function downloadCSV(data, filename = "devices.csv") {
@@ -192,13 +198,18 @@ export default function Mydevice() {
               <option value="Omega Semester">Omega Semester</option>
             </select>
 
-            <button
-              className="mb-4 bg-green-600 text-white px-4 py-2 m-4 rounded hover:bg-green-700 transition cursor-pointer"
-              onClick={() => downloadCSV(filteredDevices, "filtered_devices.csv")}
-              disabled={filteredDevices.length === 0}
+            <select
+              name="gender"
+              value={selectedGender}
+              onChange={(e) => setSelectedGender(e.target.value)}
+              className="w-full md:w-[300px] mt-1 md:mt-0 p-2 border border-gray-300 rounded cursor-pointer"
             >
-              Download Filtered Results
-            </button>
+              <option value="">All Genders</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
+
 
 
           </div>
@@ -219,6 +230,17 @@ export default function Mydevice() {
           )}
 
 
+          <h2 className="absolute mt-10    z-50 left-54">
+
+            <button
+              className="mb-4 bg-green-600 text-white px-4 py-2 m-4 rounded hover:bg-green-700 transition cursor-pointer"
+              onClick={() => downloadCSV(filteredDevices, "filtered_devices.csv")}
+              disabled={filteredDevices.length === 0}
+            >
+              Download Filtered Results
+            </button>
+          </h2>
+
           {filteredDevices.length === 0 ? (
             <p className="text-gray-500 text-center">
               No devices match the search criteria.
@@ -234,7 +256,9 @@ export default function Mydevice() {
                       : "opacity-100 scale-100"
                     }
                 `}
+
                 >
+
                   <img
                     src={device.image || defaultImage(device.type)}
                     alt={device.name}
@@ -258,7 +282,7 @@ export default function Mydevice() {
                   <div className="mb-2 text-sm text-gray-600">
                     <strong>Matric:</strong> {device.matric}
                   </div>
-                  <div className="mb-4 text-sm text-gray-600">
+                  <div className="mb-4 text-sm text-gray-600 ">
                     <strong>Date:</strong> {formatDeviceDate(device.date)}
                   </div>
 
