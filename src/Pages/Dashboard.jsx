@@ -60,7 +60,7 @@ export default function Dashboard() {
     <div className="flex">
       <Sidebar />
       <div className="flex-1 md:ml-52  transition-all duration-300">
-        <Topbar />
+        <Topbar middlename=""/>
         <InternetStatus></InternetStatus>
         <main className="mt-25 p-4 md:p-2">
           {/* Info Cards */}

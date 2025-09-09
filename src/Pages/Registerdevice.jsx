@@ -188,7 +188,7 @@ export default function RegisterDevice() {
     <div className="flex">
       <Sidebar />
       <div className="flex-1 md:ml-52 md:mt-0 mt-10">
-        <Topbar pageName="Register device" middlename="Register Device" />
+        <Topbar pageName="Register device" />
         <InternetStatus />
         <main className="mt-20 flex flex-col justify-center items-center p-6 w-full">
           {successMessage && (
@@ -252,7 +252,7 @@ export default function RegisterDevice() {
               <h2 className="font-bold text-lg mb-4">Device Details</h2>
               {devices.map((device, index) => (
                 <div key={index} className="mb-6  pb-4">
-                  <i><h3 className="font-semibold text-2xl mb-2">Device {index + 1}</h3></i>
+                  <h3 className="font-semibold text-2xl text-blue-600 font-mono mb-2">Device {index + 1}</h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Type */}

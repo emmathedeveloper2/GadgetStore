@@ -81,11 +81,11 @@ export default function Mydevice() {
 
   function formatDeviceDate(dateStr) {
     if (!dateStr) return "N/A";
-    // Try to parse as YYYY-MM-DD
+    // dd/mm/yyyy
     const date = new Date(dateStr);
-    if (isNaN(date)) return dateStr; // fallback if invalid
-    const day = date.toLocaleString("en-US", { weekday: "short" }); // e.g. Mon
-    const month = date.toLocaleString("en-US", { month: "long" }); // e.g. April
+    if (isNaN(date)) return dateStr; 
+    const day = date.toLocaleString("en-US", { weekday: "short" }); 
+    const month = date.toLocaleString("en-US", { month: "short" }); 
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
@@ -147,11 +147,11 @@ export default function Mydevice() {
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
       <div className="flex-1 md:ml-52">
-        <Topbar pageName="Devices" middlename="Resgistered device" />
+        <Topbar pageName="Devices" middlename=""/>
         <InternetStatus />
-        <main className="mt-24 md:mt-40 p-2 sm:p-4 md:p-6">
+        <main className="mt-25 p-2 sm:p-4 md:p-6">
           {/* Search and Filter */}
-          <div className="flex flex-col md:flex-row items-center justify-center mb-6 gap-4 md:mt-0 mt-10">
+          <div className="flex flex-col md:flex-row items-center justify-center  gap-4 ">
             <input
               type="text"
               placeholder="Matric number"
@@ -210,16 +210,13 @@ export default function Mydevice() {
             </div>
           )}
 
-          <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
-            Registered Devices
-          </h2>
 
           {filteredDevices.length === 0 ? (
             <p className="text-gray-500 text-center">
               No devices match the search criteria.
             </p>
           ) : (
-            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            <div className="grid gap-4 grid-cols-1 mt-30 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               {filteredDevices.map((device) => (
                 <div
                   key={device.id}

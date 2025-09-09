@@ -4,8 +4,9 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { useState } from "react";
 import Notification from "./Notification";
 import { NavLink } from "react-router-dom";
+import InternetStatus from "./InternetStatus";
 
-export default function Topbar({ pageName = "Dashboard" , middlename = "Dashboard"}) {
+export default function Topbar({ pageName = "Dashboard" , middlename = <InternetStatus />}) {
   const [showSidebar, setShowSidebar] = useState(false);
   const [hasNewNotification] = useState(true);
 
