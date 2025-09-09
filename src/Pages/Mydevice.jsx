@@ -23,6 +23,7 @@ export default function Mydevice() {
   const [deletedDeviceId, setDeletedDeviceId] = useState(null);
   const [selectedSemester, setSelectedSemester] = useState("");
   const [searchDate, setSearchDate] = useState("");
+  const [selectedHall, setSelectedHall] = useState(""); // 1. Add this state
 
   // Define your Firestore collection name
   const COLLECTION_NAME = "devices";
@@ -97,8 +98,6 @@ export default function Mydevice() {
     if (searchDate) {
       if (device.date) {
         const dateParts = device.date.toLowerCase().split("/");
-        // e.g. ["thu", "september", "2025"]
-
         matchesDate = dateParts.some((part) =>
           part.includes(searchDate.toLowerCase())
         );
@@ -110,7 +109,11 @@ export default function Mydevice() {
     const matchesSemester =
       !selectedSemester || device.semester === selectedSemester;
 
-    return matchesMatric && matchesSemester && matchesDate;
+    // 3. Filter by hall of residence
+    const matchesHall =
+      !selectedHall || (device.hallresidence && device.hallresidence === selectedHall);
+
+    return matchesMatric && matchesSemester && matchesDate && matchesHall;
   });
 
   function downloadCSV(data, filename = "devices.csv") {
@@ -143,7 +146,7 @@ export default function Mydevice() {
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
       <div className="flex-1 md:ml-52">
-        <Topbar pageName="Devices" middlename="Resgistered device"/>
+        <Topbar pageName="Devices" middlename="Resgistered device" />
         <main className="mt-24 md:mt-40 p-2 sm:p-4 md:p-6">
           {/* Search and Filter */}
           <div className="flex flex-col md:flex-row items-center justify-center mb-6 gap-4 md:mt-0 mt-10">
@@ -154,20 +157,6 @@ export default function Mydevice() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
             />
-            <input
-              type="text"
-              placeholder="Hall of Residence"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
-            />
-{/* 
-            <button
-              className="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 cursor-pointer w-full md:w-auto"
-              onClick={() => setSearchTerm("")}
-            >
-              Search
-            </button> */}
 
             <input
               type="text"
@@ -186,6 +175,19 @@ export default function Mydevice() {
               <option value="">All Semesters</option>
               <option value="Alpha Semester">Alpha Semester</option>
               <option value="Omega Semester">Omega Semester</option>
+            </select>
+
+            <select
+              value={selectedHall}
+              onChange={(e) => setSelectedHall(e.target.value)}
+              className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
+            >
+              <option value="">All Halls</option>
+              <option value="Faith Hall">Faith Hall</option>
+              <option value="Bishop Hall">Bishop Hall</option>
+              <option value="Victory Hall">Victory Hall</option>
+              <option value="New Hall">New Hall</option>
+              <option value="Rehoboth Hall">Rehoboth Hall</option>
             </select>
           </div>
 
