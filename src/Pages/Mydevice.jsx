@@ -158,6 +158,19 @@ export default function Mydevice() {
               className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
             />
 
+            <select
+              value={selectedHall}
+              onChange={(e) => setSelectedHall(e.target.value)}
+              className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
+            >
+              <option value="">All Halls</option>
+              <option value="Faith Hall">Faith Hall</option>
+              <option value="Bishop Hall">Bishop Hall</option>
+              <option value="Victory Hall">Victory Hall</option>
+              <option value="New Hall">New Hall</option>
+              <option value="Rehoboth Hall">Rehoboth Hall</option>
+            </select>
+
             <input
               type="text"
               placeholder="Search by date (e.g. 28, 09, 2025)"
@@ -177,18 +190,7 @@ export default function Mydevice() {
               <option value="Omega Semester">Omega Semester</option>
             </select>
 
-            <select
-              value={selectedHall}
-              onChange={(e) => setSelectedHall(e.target.value)}
-              className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
-            >
-              <option value="">All Halls</option>
-              <option value="Faith Hall">Faith Hall</option>
-              <option value="Bishop Hall">Bishop Hall</option>
-              <option value="Victory Hall">Victory Hall</option>
-              <option value="New Hall">New Hall</option>
-              <option value="Rehoboth Hall">Rehoboth Hall</option>
-            </select>
+
           </div>
 
           {searchTerm && (
