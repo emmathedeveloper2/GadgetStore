@@ -83,9 +83,9 @@ export default function Mydevice() {
     if (!dateStr) return "N/A";
     // dd/mm/yyyy
     const date = new Date(dateStr);
-    if (isNaN(date)) return dateStr; 
-    const day = date.toLocaleString("en-US", { weekday: "short" }); 
-    const month = date.toLocaleString("en-US", { month: "short" }); 
+    if (isNaN(date)) return dateStr;
+    const day = date.toLocaleString("en-US", { weekday: "short" });
+    const month = date.toLocaleString("en-US", { month: "short" });
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
@@ -147,7 +147,7 @@ export default function Mydevice() {
     <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
       <div className="flex-1 md:ml-52">
-        <Topbar pageName="Devices" middlename=""/>
+        <Topbar pageName="Devices" middlename="" />
         <InternetStatus />
         <main className="mt-25 p-2 sm:p-4 md:p-6">
           {/* Search and Filter */}
@@ -191,6 +191,14 @@ export default function Mydevice() {
               <option value="Alpha Semester">Alpha Semester</option>
               <option value="Omega Semester">Omega Semester</option>
             </select>
+
+            <button
+              className="mb-4 bg-green-600 text-white px-4 py-2 m-4 rounded hover:bg-green-700 transition cursor-pointer"
+              onClick={() => downloadCSV(filteredDevices, "filtered_devices.csv")}
+              disabled={filteredDevices.length === 0}
+            >
+              Download Filtered Results
+            </button>
 
 
           </div>
@@ -342,13 +350,7 @@ export default function Mydevice() {
             </div>
           )}
 
-          <button
-            className="mb-4 bg-green-600 text-white px-4 py-2 m-4 rounded hover:bg-green-700 transition cursor-pointer"
-            onClick={() => downloadCSV(filteredDevices, "filtered_devices.csv")}
-            disabled={filteredDevices.length === 0}
-          >
-            Download Filtered as CSV
-          </button>
+
         </main>
       </div>
     </div>
