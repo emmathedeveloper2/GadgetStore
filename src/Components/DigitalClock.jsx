@@ -66,8 +66,8 @@ export default function DigitalClock({
 
   return (
     <div className="inline-flex items-center justify-center">
-      <div className="flex flex-col items-center p-4 rounded-2xl bg-gradient-to-br from-green-600 to-green-500 text-white shadow-lg w-56">
-        <div className="text-xs opacity-90 mb-1">Live — {timezone}</div>
+      <div className="flex flex-col items-center p-4  w-56">
+        {/* <div className="text-xs opacity-90 mb-1">Live — {timezone}</div> */}
 
         <div
           aria-live="polite"
@@ -85,7 +85,7 @@ export default function DigitalClock({
         </div>
 
         {showDate && (
-          <div className="mt-2 text-sm opacity-95 text-green-100 text-center">
+          <div className="mt-2 text-sm opacity-95 text-green-500 text-center">
             {dateString}
           </div>
         )}
