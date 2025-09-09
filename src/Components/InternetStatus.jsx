@@ -52,7 +52,7 @@ const InternetStatus = () => {
           color: "white",
           backgroundColor: "red",
           textAlign: "center",
-          fontSize: "16px",
+          fontSize: "12px",
           fontWeight: "bold",
         }}
       >
@@ -69,7 +69,7 @@ const InternetStatus = () => {
           color: "white",
           backgroundColor: "green",
           textAlign: "center",
-          fontSize: "16px",
+          fontSize: "12px",
           fontWeight: "bold",
         }}
       >
