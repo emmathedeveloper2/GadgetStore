@@ -6,14 +6,14 @@ import { DivOrigami } from '../Components/DivOrigami';
 
 
 export default function Login() {
-  const [studentId, setStudentId] = useState("Dominion")
-  const [password, setPassword] = useState("12345678")
+  const [studentId, setStudentId] = useState("")
+  const [password, setPassword] = useState("")
   const navigate = useNavigate()
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (studentId === "Dominion" && password === "12345678") {
+    if (studentId === "Dominion" && password === "dudevice01") {
       navigate("/dashboard")
     } else {
       alert("Error: Invalid Student ID or Password")
