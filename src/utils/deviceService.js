@@ -1,4 +1,4 @@
-import { db } from "../../lib/Firebase.js";
+import { db } from "../lib/firebase.js";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 
 export async function getDevices() {

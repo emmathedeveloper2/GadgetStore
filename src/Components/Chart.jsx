@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
-import { db } from "../../lib/firebase";
+import { db } from "../lib/firebase";
 import { Bar, Line } from "react-chartjs-2";
 import { IoTimeOutline } from "react-icons/io5";
 import { options, lineOptions2, lineOptions } from "./wait";

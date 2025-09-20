@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
-import { fetchDevices, deleteDevice, updateDevice } from "../../lib/firebase";
+import { fetchDevices, deleteDevice, updateDevice } from "../lib/firebase";
 import {
   AlertDialog,
   AlertDialogAction,

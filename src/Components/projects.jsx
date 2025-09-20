@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import DownloadCSV from "./DownloadCsv";
-import { fetchDevices } from "../../lib/Firebase";
+import { fetchDevices } from "../lib/firebase";
 import DigitalClock from "./DigitalClock";
 
 // Helper function to format date as Mon/April/2025

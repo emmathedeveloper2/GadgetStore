@@ -4,7 +4,7 @@ import Project from "../Components/projects";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import { FaUser } from "react-icons/fa";
-import { fetchDevices } from "../../lib/Firebase"; 
+import { fetchDevices } from "../lib/firebase"; 
 import InternetStatus from "../Components/InternetStatus";
 
 export default function Dashboard() {
