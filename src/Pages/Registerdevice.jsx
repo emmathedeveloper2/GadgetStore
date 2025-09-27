@@ -212,6 +212,7 @@ function formatDeviceDate(dateStr) {
                   <option>Faith Hall</option>
                   <option>Bishop Hall</option>
                   <option>Victory Hall</option>
+                  <option>Landmark Hall</option>
                   <option>New Hall</option>
                   <option>Rehoboth Hall</option>
                 </select>
