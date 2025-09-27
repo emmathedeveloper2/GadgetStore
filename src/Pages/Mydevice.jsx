@@ -214,6 +214,7 @@ function downloadCSV(data, filename = "devices.csv") {
               <option value="Faith Hall">Faith Hall</option>
               <option value="Bishop Hall">Bishop Hall</option>
               <option value="Victory Hall">Victory Hall</option>
+              <option value="Victory Hall">Landmark Hall</option>
               <option value="New Hall">New Hall</option>
               <option value="Rehoboth Hall">Rehoboth Hall</option>
             </select>
