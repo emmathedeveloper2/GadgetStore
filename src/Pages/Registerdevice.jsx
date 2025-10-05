@@ -29,6 +29,7 @@ export default function RegisterDevice() {
   const [imagePreviews, setImagePreviews] = useState([]);
   const [successMessage, setSuccessMessage] = useState("");
   const fileInputRefs = useRef([]);
+  
 
   // Update brand/model suggestions per device
   useEffect(() => {
@@ -265,6 +266,7 @@ function formatDeviceDate(dateStr) {
                       <option>Smartwatch</option>
                       <option>Others</option>
                     </select>
+                    
 
                     {/* Brand */}
                     <div className="">
