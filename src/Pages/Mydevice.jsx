@@ -49,8 +49,9 @@ export default function Mydevice() {
     async function loadStats() {
       const device = await fetchDevices("devices");
       const gadgets = device.length;
+      
       setCards([
-        { label: "Gadgets", value: gadgets }
+        { label: "Device", value: gadgets },
       ]);
 
     }
@@ -277,6 +278,27 @@ export default function Mydevice() {
               {filteredDevices.length} device
               {filteredDevices.length !== 1 ? "s" : ""} found for Day "
               {searchDate}th"
+            </div>
+          )}
+          {selectedGender && (
+            <div className="text-center mb-2 text-red-300 font-semibold">
+              {filteredDevices.length} device
+              {filteredDevices.length !== 1 ? "s" : ""} found for"
+              {selectedGender}"
+            </div>
+          )}
+          {selectedSemester && (
+            <div className="text-center mb-2 text-red-300 font-semibold">
+              {filteredDevices.length} device
+              {filteredDevices.length !== 1 ? "s" : ""} found for"
+              {selectedSemester}"
+            </div>
+          )}
+          {selectedHall && (
+            <div className="text-center mb-2 text-red-300 font-semibold">
+              {filteredDevices.length} device
+              {filteredDevices.length !== 1 ? "s" : ""} found for"
+              {selectedHall}"
             </div>
           )}
 
