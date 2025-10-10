@@ -25,7 +25,10 @@ export default function Mydevice() {
   const [searchTerm, setSearchTerm] = useState("");
   const [deletedDeviceId, setDeletedDeviceId] = useState(null);
   const [selectedSemester, setSelectedSemester] = useState("");
-  const [searchDate, setSearchDate] = useState("");
+  const [searchDay, setSearchDay] = useState("");
+  const [searchMonth, setSearchMonth] = useState("");
+  const [searchYear, setSearchYear] = useState("");
+
   const [selectedHall, setSelectedHall] = useState(""); // 1. Add this state
   const [selectedGender, setSelectedGender] = useState(""); // Add this line
   const [cards, setCards] = useState([
@@ -49,7 +52,7 @@ export default function Mydevice() {
     async function loadStats() {
       const device = await fetchDevices("devices");
       const gadgets = device.length;
-      
+
       setCards([
         { label: "Device", value: gadgets },
       ]);
@@ -114,15 +117,18 @@ export default function Mydevice() {
       .includes(searchTerm.toLowerCase());
 
     let matchesDate = true;
-    if (searchDate) {
-      if (device.date) {
-        const dateParts = device.date.toLowerCase().split("/");
-        matchesDate = dateParts.some((part) =>
-          part.includes(searchDate.toLowerCase())
-        );
-      } else {
-        matchesDate = false;
-      }
+
+    if (device.date) {
+      const dateObj = new Date(device.date);
+      const day = String(dateObj.getDate()).padStart(2, "0");
+      const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+      const year = String(dateObj.getFullYear());
+
+      if (searchDay && searchDay !== day) matchesDate = false;
+      if (searchMonth && searchMonth !== month) matchesDate = false;
+      if (searchYear && searchYear !== year) matchesDate = false;
+    } else {
+      matchesDate = false;
     }
 
     const matchesSemester =
@@ -233,13 +239,32 @@ export default function Mydevice() {
               <option value="Rehoboth Hall">Rehoboth Hall</option>
             </select>
 
-            <input
-              type="text"
-              placeholder="Search by date (e.g. 28, 09, 2025)"
-              value={searchDate}
-              onChange={(e) => setSearchDate(e.target.value)}
-              className="border border-gray-300 rounded w-full md:w-80 px-4 py-2 focus:outline-0"
-            />
+            <div className="flex flex-wrap gap-2 text">
+              <input
+                type="text"
+                placeholder="Day(e.g.28)"
+                value={searchDay}
+                onChange={(e) => setSearchDay(e.target.value)}
+                className="border border-gray-300 rounded w-24 px-4 py-1 focus:outline-0"
+              />
+
+              <input
+                type="text"
+                placeholder="Mon(e.g. 09)"
+                value={searchMonth}
+                onChange={(e) => setSearchMonth(e.target.value)}
+                className="border border-gray-300 rounded w-28 px-4 py-1 focus:outline-0"
+              />
+
+              <input
+                type="text"
+                placeholder="Year (e.g. 2025)"
+                value={searchYear}
+                onChange={(e) => setSearchYear(e.target.value)}
+                className="border border-gray-300 rounded w-28 px-4 py-1 focus:outline-0"
+              />
+            </div>
+
 
             <select
               name="semester"
@@ -273,13 +298,16 @@ export default function Mydevice() {
               {searchTerm}"
             </div>
           )}
-          {searchDate && (
+          {(searchDay || searchMonth || searchYear) && (
             <div className="text-center mb-2 text-red-300 font-semibold">
               {filteredDevices.length} device
-              {filteredDevices.length !== 1 ? "s" : ""} found for Day "
-              {searchDate}th"
+              {filteredDevices.length !== 1 ? "s" : ""} found for{" "}
+              {searchDay && `Day "${searchDay}th" `}
+              {searchMonth && `Month "${searchMonth}th" `}
+              {searchYear && `Year "${searchYear}"`}
             </div>
           )}
+
           {selectedGender && (
             <div className="text-center mb-2 text-red-300 font-semibold">
               {filteredDevices.length} device
